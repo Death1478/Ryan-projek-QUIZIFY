@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Pembelajaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style-modul.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/modul.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="row bg-primary py-2 m-0">
+        <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/img/logo.png" alt="Logo" height="40" class="ms-3">
+                        Quizify
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 col-lg text-center text-white" style="margin-top: 10px;">
+            <h2>Jaringan</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row custom-row">
+            <!-- Sidebar with Dropdown -->
+            <div class="col-12 col-lg-3 bg-dark py-4" style="flex: 0 0 auto;">
+                <h4 class="text-white text-center mb-4">Modul Pembelajaran</h4>
+
+                <div class="accordion" id="sidebarAccordion">
+                    <!-- Pengantar Pemrograman -->
+                    <div class="accordion-item active">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Pengenalan Jaringan Komputer
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-dark" id="v-pills-materi1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi1" role="tab" aria-controls="v-pills-materi1" aria-selected="true">Apa itu Jaringan Komputer?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi2" role="tab" aria-controls="v-pills-materi2" aria-selected="false">Manfaat Jaringan Komputer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi3" role="tab" aria-controls="v-pills-materi3" aria-selected="false">Topologi Jaringan</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Variabel dan Tipe Data -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Protokol dan Pengalamatan Jaringan
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi4" role="tab" aria-controls="v-pills-materi4" aria-selected="false">Apa itu Protokol Jaringan?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi5" role="tab" aria-controls="v-pills-materi5" aria-selected="false">Jenis-jenis Protokol Jaringan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi6" role="tab" aria-controls="v-pills-materi6" aria-selected="false">Pengertian Alamat IP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kontrol Alur dan Fungsi -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Keamanan Jaringan dan Manajemen
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi7" role="tab" aria-controls="v-pills-materi7" aria-selected="false">Firewall dalam Jaringan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi8" role="tab" aria-controls="v-pills-materi8" aria-selected="false">Enkripsi dalam Jaringan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi9" role="tab" aria-controls="v-pills-materi9" aria-selected="false">Manajemen Jaringan</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="col-12 col-lg-9 materi">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <!-- Apa itu Jaringan Komputer? -->
+                    <div class="tab-pane fade show active" id="v-pills-materi1" role="tabpanel" aria-labelledby="v-pills-materi1-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Jaringan Komputer</h2>
+                                <p class="text-muted">
+                                    Jaringan komputer adalah elemen penting dalam dunia teknologi informasi modern. Dalam modul ini, kita akan membahas pengertian, tujuan, dan jenis-jenis jaringan komputer untuk memberikan pemahaman dasar tentang konsep ini.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Apa itu Jaringan Komputer?</h4>
+                                <p>
+                                    Jaringan komputer adalah kumpulan perangkat komputer yang saling terhubung untuk memungkinkan berbagi data dan sumber daya secara efisien. Jaringan ini dapat berupa koneksi sederhana antara dua perangkat, hingga sistem kompleks yang melibatkan ribuan perangkat di berbagai lokasi.
+                                </p>
+                                <p>
+                                    Dalam jaringan komputer, perangkat yang saling terhubung disebut <b>node</b>. Node dapat berupa komputer, printer, server, atau perangkat jaringan lain seperti router dan switch. Komunikasi di jaringan dilakukan melalui berbagai protokol komunikasi, seperti TCP/IP, yang memastikan pengiriman data secara aman dan efisien.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Tujuan Jaringan Komputer</h4>
+                                <ul>
+                                    <li><b>Berbagi Data:</b> 
+                                        Jaringan memungkinkan pengguna untuk berbagi informasi, file, dan data antar perangkat secara langsung, tanpa perlu media fisik seperti flash drive.
+                                    </li>
+                                    <li><b>Berbagi Sumber Daya:</b> 
+                                        Jaringan memungkinkan beberapa perangkat untuk menggunakan sumber daya bersama, seperti printer, scanner, atau koneksi internet.
+                                    </li>
+                                    <li><b>Komunikasi Efisien:</b> 
+                                        Dengan jaringan komputer, pengguna dapat berkomunikasi melalui email, pesan instan, atau aplikasi berbasis internet, baik dalam satu kantor maupun di seluruh dunia.
+                                    </li>
+                                    <li><b>Peningkatan Kolaborasi:</b> 
+                                        Jaringan mempermudah kolaborasi antar tim, memungkinkan kerja sama dalam proyek melalui alat berbasis jaringan seperti cloud computing.
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Jenis-Jenis Jaringan Komputer</h4>
+                                <ul>
+                                    <li><b>Local Area Network (LAN):</b> 
+                                        Jaringan yang mencakup area lokal, seperti satu gedung atau ruangan.
+                                    </li>
+                                    <li><b>Wide Area Network (WAN):</b> 
+                                        Jaringan yang mencakup area geografis yang luas, seperti antar kota atau negara. Contoh: Internet.
+                                    </li>
+                                    <li><b>Metropolitan Area Network (MAN):</b> 
+                                        Jaringan yang mencakup area yang lebih besar daripada LAN, seperti satu kota.
+                                    </li>
+                                    <li><b>Wireless LAN (WLAN):</b> 
+                                        LAN yang menggunakan koneksi nirkabel, biasanya melalui Wi-Fi.
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Jaringan komputer adalah fondasi teknologi informasi modern yang memungkinkan berbagi data, sumber daya, dan komunikasi yang efisien. Dengan memahami pengertian, tujuan, dan jenis-jenis jaringan komputer, kita dapat memanfaatkan teknologi ini secara maksimal untuk berbagai keperluan, baik personal maupun profesional.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Manfaat Jaringan Komputer -->
+                    <div class="tab-pane fade" id="v-pills-materi2" role="tabpane2" aria-labelledby="v-pills-materi2-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Manfaat Jaringan Komputer</h2>
+                                <p class="text-muted">
+                                    Jaringan komputer memberikan berbagai manfaat yang signifikan bagi individu maupun organisasi. Dalam modul ini, kita akan membahas bagaimana jaringan komputer mempermudah berbagi informasi, sumber daya, serta meningkatkan kolaborasi dan komunikasi antar pengguna.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. Berbagi Informasi Secara Efisien</h4>
+                                <p>
+                                    Jaringan komputer memungkinkan pengguna untuk berbagi informasi, data, dan file dengan cepat dan mudah.
+                                </p>
+                                <ul>
+                                    <li><b>Efisiensi Waktu:</b> Tidak perlu menggunakan media fisik seperti flash drive atau CD.</li>
+                                    <li><b>Kemudahan Akses:</b> Informasi dapat diakses oleh banyak pengguna dalam jaringan yang sama, kapan saja dan dari perangkat apa saja.</li>
+                                </ul>
+                                <p><b>Contoh Penerapan:</b> 
+                                    Perusahaan dapat mengelola data karyawan di server pusat yang bisa diakses oleh bagian HR, manajemen, dan divisi terkait lainnya.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. Berbagi Sumber Daya</h4>
+                                <p>
+                                    Salah satu keuntungan utama jaringan komputer adalah kemampuannya untuk berbagi sumber daya.
+                                </p>
+                                <ul>
+                                    <li><b>Printer dan Scanner:</b> Beberapa pengguna dalam jaringan dapat menggunakan printer atau scanner yang sama tanpa perlu memiliki perangkat terpisah untuk setiap komputer.</li>
+                                    <li><b>File Server:</b> File server memungkinkan penyimpanan data di satu tempat yang dapat diakses oleh semua pengguna jaringan.</li>
+                                    <li><b>Koneksi Internet:</b> Dalam jaringan, satu koneksi internet dapat dibagi di antara banyak perangkat, menghemat biaya dan meningkatkan produktivitas.</li>
+                                </ul>
+                                <p><b>Contoh Penerapan:</b> 
+                                    Di lingkungan kantor, satu printer dapat digunakan oleh semua karyawan melalui jaringan lokal (LAN).
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. Kolaborasi dan Komunikasi Antar Pengguna</h4>
+                                <p>
+                                    Jaringan komputer memfasilitasi kolaborasi yang lebih baik dan komunikasi yang lebih cepat.
+                                </p>
+                                <ul>
+                                    <li><b>Kolaborasi:</b> Alat berbasis jaringan seperti Google Drive atau Microsoft Teams memungkinkan banyak orang untuk bekerja pada dokumen yang sama secara real-time.</li>
+                                    <li><b>Komunikasi:</b> Jaringan mendukung email, pesan instan, dan video conference untuk berkomunikasi dengan pengguna lain, baik dalam jaringan lokal maupun di seluruh dunia.</li>
+                                </ul>
+                                <p><b>Contoh Penerapan:</b> 
+                                    Tim proyek di kantor dapat menggunakan aplikasi seperti Slack atau Zoom untuk berdiskusi dan bekerja bersama meskipun berada di lokasi yang berbeda.
+                                </p>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Manfaat jaringan komputer mencakup berbagi informasi dan sumber daya dengan lebih efisien, serta meningkatkan kolaborasi dan komunikasi antar pengguna. Jaringan tidak hanya membuat proses kerja lebih cepat dan efektif, tetapi juga membantu mengurangi biaya operasional dan meningkatkan produktivitas di berbagai bidang.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Topologi Jaringan -->
+                    <div class="tab-pane fade" id="v-pills-materi3" role="tabpane3" aria-labelledby="v-pills-materi3-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Topologi Jaringan</h2>
+                                <p class="text-muted">
+                                    Topologi jaringan menentukan bagaimana perangkat dalam jaringan diatur dan terhubung. Pemilihan topologi yang tepat dapat meningkatkan efisiensi, keandalan, dan skalabilitas jaringan.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Pengertian Topologi Jaringan</h4>
+                                <p>
+                                    Topologi jaringan adalah pola atau struktur pengaturan perangkat dalam sebuah jaringan komputer. Topologi ini menentukan cara perangkat saling terhubung secara fisik atau logis dan memengaruhi aliran data di jaringan.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Jenis-Jenis Topologi Jaringan</h4>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">1. Topologi Bus</h5>
+                                    <p>
+                                        Pada topologi bus, semua perangkat terhubung ke satu kabel utama (bus) yang berfungsi sebagai jalur data utama.
+                                    </p>
+                                    <ul>
+                                        <li><b>Ciri-Ciri:</b>
+                                            <ul>
+                                                <li>Data dikirim dalam satu arah melalui kabel utama.</li>
+                                                <li>Setiap perangkat menerima data, tetapi hanya perangkat yang dituju yang memprosesnya.</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Keuntungan:</b>
+                                            <ul>
+                                                <li>Biaya instalasi rendah karena membutuhkan kabel yang lebih sedikit.</li>
+                                                <li>Mudah diimplementasikan untuk jaringan kecil.</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Kekurangan:</b>
+                                            <ul>
+                                                <li>Jika kabel utama rusak, seluruh jaringan terganggu.</li>
+                                                <li>Sulit untuk memperbesar jaringan karena peningkatan jumlah perangkat dapat memperlambat kinerja.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p><b>Contoh Penerapan:</b> Digunakan dalam jaringan kecil atau sementara, seperti laboratorium atau konferensi.</p>
+                                </div>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">2. Topologi Star</h5>
+                                    <p>
+                                        Pada topologi star, semua perangkat terhubung ke satu perangkat pusat (hub atau switch). Perangkat pusat ini mengatur lalu lintas data di jaringan.
+                                    </p>
+                                    <ul>
+                                        <li><b>Ciri-Ciri:</b>
+                                            <ul>
+                                                <li>Semua komunikasi melewati perangkat pusat.</li>
+                                                <li>Perangkat pusat mengatur dan mengarahkan data ke perangkat tujuan.</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Keuntungan:</b>
+                                            <ul>
+                                                <li>Mudah untuk menambah atau menghapus perangkat tanpa mengganggu jaringan.</li>
+                                                <li>Jika satu perangkat rusak, jaringan tetap berfungsi (kecuali perangkat pusat rusak).</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Kekurangan:</b>
+                                            <ul>
+                                                <li>Ketergantungan tinggi pada perangkat pusat; jika perangkat pusat rusak, jaringan terganggu.</li>
+                                                <li>Biaya instalasi lebih tinggi karena membutuhkan lebih banyak kabel.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p><b>Contoh Penerapan:</b> Digunakan di kantor, rumah, atau lingkungan pendidikan dengan jaringan lokal (LAN).</p>
+                                </div>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">3. Topologi Ring</h5>
+                                    <p>
+                                        Pada topologi ring, perangkat terhubung dalam bentuk lingkaran. Data dikirim dari satu perangkat ke perangkat berikutnya hingga mencapai perangkat tujuan.
+                                    </p>
+                                    <ul>
+                                        <li><b>Ciri-Ciri:</b>
+                                            <ul>
+                                                <li>Data bergerak dalam satu arah (searah jarum jam atau sebaliknya) untuk menghindari konflik data.</li>
+                                                <li>Setiap perangkat memiliki koneksi langsung ke dua perangkat lainnya (sebelah kiri dan kanan).</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Keuntungan:</b>
+                                            <ul>
+                                                <li>Kinerja tetap stabil meskipun terdapat banyak perangkat.</li>
+                                                <li>Mudah untuk mengelola lalu lintas data dalam jaringan.</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Kekurangan:</b>
+                                            <ul>
+                                                <li>Jika satu perangkat atau kabel rusak, seluruh jaringan terganggu.</li>
+                                                <li>Penambahan atau penghapusan perangkat memerlukan penghentian sementara jaringan.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p><b>Contoh Penerapan:</b> Umumnya digunakan dalam jaringan dengan alur data tetap, seperti jaringan provider telekomunikasi.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Pemilihan topologi jaringan harus mempertimbangkan kebutuhan, ukuran jaringan, anggaran, dan keandalan yang diinginkan. 
+                                </p>
+                                <ul>
+                                    <li><b>Topologi Bus:</b> Cocok untuk jaringan kecil dengan anggaran terbatas.</li>
+                                    <li><b>Topologi Star:</b> Pilihan populer untuk jaringan lokal karena kemudahan pengelolaannya.</li>
+                                    <li><b>Topologi Ring:</b> Digunakan dalam jaringan yang membutuhkan alur data terorganisir dan konsisten.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Apa itu Protokol Jaringan? -->
+                    <div class="tab-pane fade" id="v-pills-materi4" role="tabpane4" aria-labelledby="v-pills-materi4-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Protokol Jaringan</h2>
+                                <p class="text-muted">
+                                    Protokol jaringan adalah serangkaian aturan dan standar yang mengatur cara perangkat dalam jaringan berkomunikasi dan bertukar data. Protokol ini memastikan bahwa data yang dikirimkan dari satu perangkat ke perangkat lain dapat diterima dengan benar, diproses dengan tepat, dan diteruskan ke tujuan yang benar. Tanpa protokol jaringan, komunikasi antar perangkat tidak dapat berjalan dengan efisien atau terjamin keamanannya.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Pengertian Protokol Jaringan</h4>
+                                <p>
+                                    Protokol jaringan adalah serangkaian aturan dan standar yang mengatur cara perangkat dalam jaringan berkomunikasi dan bertukar data. Protokol ini memastikan bahwa data yang dikirimkan dari satu perangkat ke perangkat lain dapat diterima dengan benar, diproses dengan tepat, dan diteruskan ke tujuan yang benar. Tanpa protokol jaringan, komunikasi antar perangkat tidak dapat berjalan dengan efisien atau terjamin keamanannya.
+                                </p>
+                                <p>Protokol ini bertanggung jawab untuk menentukan berbagai hal, seperti:</p>
+                                <ul>
+                                    <li><b>Format data:</b> Bagaimana data dikemas agar dapat dipahami oleh penerima.</li>
+                                    <li><b>Proses komunikasi:</b> Bagaimana perangkat saling mengirim dan menerima data.</li>
+                                    <li><b>Penanganan kesalahan:</b> Apa yang terjadi jika data tidak sampai atau rusak selama pengiriman.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Jenis-Jenis Protokol Jaringan</h4>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">1. Protokol TCP/IP (Transmission Control Protocol/Internet Protocol)</h5>
+                                    <p>
+                                        Protokol TCP/IP adalah dasar dari komunikasi data di internet dan jaringan komputer lainnya. TCP mengatur pengiriman data dalam urutan yang benar dan memastikan data sampai dengan akurat, sedangkan IP bertanggung jawab untuk pengalamatan dan pengiriman data ke perangkat tujuan.
+                                    </p>
+                                    <ul>
+                                        <li><b>Kelebihan:</b> Dapat bekerja di berbagai jenis jaringan dan mendukung komunikasi global di internet.</li>
+                                        <li><b>Contoh Penggunaan:</b> Digunakan dalam hampir semua komunikasi internet, seperti browsing web, email, dan aplikasi online.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">2. Protokol HTTP (Hypertext Transfer Protocol)</h5>
+                                    <p>
+                                        HTTP digunakan untuk komunikasi antara web browser dan server web. HTTP mengatur bagaimana pesan dikirimkan dan diterima di web.
+                                    </p>
+                                    <ul>
+                                        <li><b>Kelebihan:</b> Protokol yang sangat sederhana dan efektif untuk pertukaran data berbasis teks di web.</li>
+                                        <li><b>Contoh Penggunaan:</b> Digunakan saat mengakses halaman web di browser (misalnya, saat mengetik "https://www.example.com").</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">3. Protokol FTP (File Transfer Protocol)</h5>
+                                    <p>
+                                        FTP digunakan untuk mentransfer file antar komputer dalam jaringan, memungkinkan pengguna untuk mengunggah atau mengunduh file ke atau dari server.
+                                    </p>
+                                    <ul>
+                                        <li><b>Kelebihan:</b> Cepat dalam mentransfer file dalam jumlah besar dan sering digunakan untuk pemeliharaan situs web.</li>
+                                        <li><b>Contoh Penggunaan:</b> Digunakan oleh pengelola situs web untuk mengunggah file ke server.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">4. Protokol DNS (Domain Name System)</h5>
+                                    <p>
+                                        DNS mengonversi nama domain yang mudah diingat (seperti www.example.com) menjadi alamat IP yang digunakan perangkat untuk mengidentifikasi lokasi server di jaringan.
+                                    </p>
+                                    <ul>
+                                        <li><b>Kelebihan:</b> Mempermudah pengguna untuk mengakses situs web tanpa perlu mengingat alamat IP.</li>
+                                        <li><b>Contoh Penggunaan:</b> Digunakan setiap kali Anda mengakses sebuah situs web melalui nama domain.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="mb-4">
+                                    <h5 class="text-dark fw-bold">5. Protokol DHCP (Dynamic Host Configuration Protocol)</h5>
+                                    <p>
+                                        DHCP secara otomatis memberikan alamat IP kepada perangkat yang bergabung dengan jaringan, sehingga memudahkan konfigurasi jaringan.
+                                    </p>
+                                    <ul>
+                                        <li><b>Kelebihan:</b> Mempermudah pengaturan jaringan tanpa perlu menetapkan alamat IP secara manual untuk setiap perangkat.</li>
+                                        <li><b>Contoh Penggunaan:</b> Digunakan dalam jaringan lokal untuk memberikan alamat IP secara otomatis kepada perangkat yang terhubung.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Protokol jaringan merupakan elemen krusial dalam komunikasi data di jaringan komputer. Protokol seperti TCP/IP, HTTP, FTP, DNS, dan DHCP membantu memastikan bahwa perangkat dapat berkomunikasi dengan benar, aman, dan efisien. Setiap protokol memiliki tujuan dan fungsi spesifik, dan bersama-sama mereka menciptakan komunikasi yang lancar dan terkoordinasi dalam jaringan komputer.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Jenis-jenis Protokol Jaringan -->
+                    <div class="tab-pane fade" id="v-pills-materi5" role="tabpane5" aria-labelledby="v-pills-materi5-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Jenis-Jenis Protokol Jaringan</h2>
+                                <p class="text-muted">
+                                    Protokol jaringan adalah seperangkat aturan yang mengatur komunikasi antara perangkat di jaringan komputer. Ada berbagai jenis protokol yang digunakan untuk tujuan yang berbeda-beda, seperti transfer data, komunikasi internet, dan pengiriman email. Berikut adalah beberapa jenis protokol jaringan yang umum digunakan:
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. HTTP/HTTPS (Hypertext Transfer Protocol / Secure)</h4>
+                                <p><b>Fungsi:</b></p>
+                                <p>
+                                    HTTP adalah protokol yang digunakan untuk mentransfer data di web antara web browser dan server. HTTP memungkinkan pengguna mengakses situs web melalui permintaan (request) dan respons (response). HTTPS adalah versi aman dari HTTP, di mana data yang dikirimkan antara browser dan server dienkripsi menggunakan SSL/TLS untuk melindungi informasi yang sensitif.
+                                </p>
+                                <ul>
+                                    <li><b>Kelebihan:</b> 
+                                        <ul>
+                                            <li>HTTP: Cepat dan efisien untuk komunikasi di web tanpa enkripsi.</li>
+                                            <li>HTTPS: Menyediakan tingkat keamanan yang lebih tinggi untuk data pribadi dan transaksi online.</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Contoh Penggunaan:</b> 
+                                        <ul>
+                                            <li>HTTP digunakan untuk browsing halaman web tanpa melibatkan data sensitif.</li>
+                                            <li>HTTPS digunakan saat mengakses situs yang memerlukan keamanan tinggi, seperti transaksi online, login akun, dan pembayaran digital.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. FTP (File Transfer Protocol)</h4>
+                                <p><b>Fungsi:</b></p>
+                                <p>
+                                    FTP adalah protokol yang digunakan untuk mentransfer file antara komputer dalam jaringan. FTP memungkinkan pengguna untuk mengunggah dan mengunduh file ke dan dari server dengan cara yang efisien.
+                                </p>
+                                <ul>
+                                    <li><b>Kelebihan:</b> 
+                                        <ul>
+                                            <li>Memungkinkan pengiriman file berukuran besar dengan cepat.</li>
+                                            <li>Mendukung transfer file dalam mode teks atau biner, dan memungkinkan penggunaan perintah untuk mengelola file (misalnya, menghapus atau mengganti nama file).</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Contoh Penggunaan:</b> 
+                                        <ul>
+                                            <li>FTP sering digunakan oleh pengelola situs web untuk mengunggah file (seperti halaman HTML, gambar, dan video) ke server web.</li>
+                                            <li>FTP juga digunakan dalam berbagi file dalam jaringan lokal atau antar organisasi.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. TCP/IP (Transmission Control Protocol / Internet Protocol)</h4>
+                                <p><b>Fungsi:</b></p>
+                                <p>
+                                    TCP/IP adalah protokol yang mengatur komunikasi data di internet. TCP bertanggung jawab untuk memastikan data dikirimkan dengan urutan yang benar dan aman, sementara IP menangani pengalamatan dan pengiriman data ke perangkat tujuan di jaringan.
+                                </p>
+                                <ul>
+                                    <li><b>Kelebihan:</b> 
+                                        <ul>
+                                            <li>Menyediakan komunikasi data yang handal dan efisien untuk berbagai jenis aplikasi dan perangkat.</li>
+                                            <li>Merupakan dasar dari internet dan jaringan komputer modern.</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Contoh Penggunaan:</b> 
+                                        <ul>
+                                            <li>Digunakan di hampir semua komunikasi internet, seperti browsing web, email, aplikasi berbasis cloud, dan komunikasi data antar server.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">4. SMTP (Simple Mail Transfer Protocol)</h4>
+                                <p><b>Fungsi:</b></p>
+                                <p>
+                                    SMTP adalah protokol yang digunakan untuk mengirimkan email antara server email. Protokol ini bertanggung jawab untuk memindahkan email dari pengirim ke penerima melalui server email yang ada di jaringan.
+                                </p>
+                                <ul>
+                                    <li><b>Kelebihan:</b> 
+                                        <ul>
+                                            <li>Efisien dalam mengirimkan pesan email dari satu server ke server lain.</li>
+                                            <li>Mendukung pengiriman email melalui jaringan global.</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Contoh Penggunaan:</b> 
+                                        <ul>
+                                            <li>SMTP digunakan oleh server email seperti Gmail, Outlook, dan Yahoo untuk mengirim email ke server penerima.</li>
+                                            <li>Digunakan dalam pengaturan email berbasis organisasi untuk mengelola pengiriman email keluar.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Setiap protokol jaringan memiliki fungsi dan tujuan spesifik yang memungkinkan komunikasi dan pengiriman data antar perangkat di jaringan. Beberapa protokol seperti HTTP/HTTPS digunakan untuk akses web, FTP untuk transfer file, TCP/IP untuk komunikasi internet secara umum, dan SMTP untuk pengiriman email. Pemahaman tentang protokol-protokol ini penting untuk memahami cara kerja jaringan dan komunikasi di dunia digital.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Pengertian Alamat IP -->
+                    <div class="tab-pane fade" id="v-pills-materi6" role="tabpane6" aria-labelledby="v-pills-materi6-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Pengertian Alamat IP</h2>
+                                <p class="text-muted">
+                                    Alamat IP (Internet Protocol Address) adalah sebuah identifikasi numerik unik yang digunakan untuk mengidentifikasi perangkat dalam jaringan komputer. Alamat ini memungkinkan perangkat untuk saling berkomunikasi dalam jaringan dan mengirimkan data dengan cara yang terorganisir. Setiap perangkat yang terhubung ke jaringan, baik itu komputer, router, printer, atau perangkat lain, memiliki alamat IP untuk membedakannya dengan perangkat lainnya.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Alamat IP versi 4 (IPv4)</h4>
+                                <p>
+                                    Alamat ini terdiri dari 4 angka yang dipisahkan oleh titik (misalnya, 192.168.1.1) dan menggunakan 32-bit untuk pengalamatan.
+                                </p>
+                                <h4 class="text-dark fw-semibold">Alamat IP versi 6 (IPv6)</h4>
+                                <p>
+                                    Alamat ini lebih panjang dan menggunakan 128-bit untuk pengalamatan, tetapi lebih jarang digunakan dibandingkan IPv4.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Fungsi Alamat IP</h4>
+                                <ul>
+                                    <li><b>Identifikasi Perangkat:</b> Setiap perangkat yang terhubung ke jaringan memiliki alamat IP yang unik. Alamat ini digunakan untuk membedakan perangkat satu dengan lainnya.</li>
+                                    <li><b>Penentuan Tujuan Data:</b> Alamat IP memungkinkan data dikirimkan ke perangkat yang tepat dalam jaringan. Ketika data dikirim melalui jaringan, alamat IP berfungsi untuk menentukan perangkat tujuan.</li>
+                                    <li><b>Routing:</b> Alamat IP membantu perangkat jaringan seperti router dalam menentukan jalur terbaik untuk mengirimkan data antar perangkat di jaringan.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Kelas Alamat IP</h4>
+                                <p>Alamat IP dibagi dalam beberapa kelas yang berbeda, berdasarkan rentang alamat dan penggunaannya. Berikut adalah tiga kelas utama alamat IP:</p>
+                                
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">1. Kelas A (10.0.0.0 - 10.255.255.255)</h5>
+                                    <ul>
+                                        <li><b>Fungsi:</b> Kelas A dirancang untuk jaringan besar dengan jumlah perangkat yang sangat banyak.</li>
+                                        <li><b>Rentang Alamat:</b> 10.0.0.0 sampai 10.255.255.255.</li>
+                                        <li><b>Jumlah Jaringan:</b> Kelas A memungkinkan hingga 128 jaringan (2^7), dengan masing-masing jaringan dapat mendukung hingga lebih dari 16 juta alamat IP.</li>
+                                        <li><b>Penggunaan:</b> Biasanya digunakan untuk organisasi besar, penyedia layanan internet (ISP), atau perusahaan dengan banyak perangkat yang terhubung dalam satu jaringan.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">2. Kelas B (172.16.0.0 - 172.31.255.255)</h5>
+                                    <ul>
+                                        <li><b>Fungsi:</b> Kelas B dirancang untuk jaringan dengan ukuran menengah, seperti perusahaan menengah atau jaringan kampus.</li>
+                                        <li><b>Rentang Alamat:</b> 172.16.0.0 sampai 172.31.255.255.</li>
+                                        <li><b>Jumlah Jaringan:</b> Kelas B memungkinkan hingga 16,384 jaringan (2^14), dengan masing-masing jaringan dapat mendukung hingga 65,534 alamat IP.</li>
+                                        <li><b>Penggunaan:</b> Digunakan oleh perusahaan dengan jumlah perangkat yang lebih sedikit dibandingkan kelas A, tetapi lebih banyak dibandingkan kelas C.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">3. Kelas C (192.168.0.0 - 192.168.255.255)</h5>
+                                    <ul>
+                                        <li><b>Fungsi:</b> Kelas C dirancang untuk jaringan kecil, seperti jaringan rumah atau kantor kecil.</li>
+                                        <li><b>Rentang Alamat:</b> 192.168.0.0 sampai 192.168.255.255.</li>
+                                        <li><b>Jumlah Jaringan:</b> Kelas C memungkinkan hingga 2,097,152 jaringan (2^21), dengan masing-masing jaringan dapat mendukung hingga 254 alamat IP.</li>
+                                        <li><b>Penggunaan:</b> Kelas C sangat umum digunakan dalam jaringan lokal (LAN) untuk rumah atau kantor dengan sedikit perangkat.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Alamat IP sangat penting untuk komunikasi antar perangkat di dalam jaringan. Dengan adanya kelas-kelas alamat IP (A, B, dan C), kita dapat menentukan jenis jaringan yang sesuai dengan kebutuhan, apakah itu untuk jaringan besar, menengah, atau kecil. Pemahaman tentang kelas alamat IP membantu dalam merancang dan mengelola jaringan yang efisien dan terorganisir.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Firewall dalam Jaringan -->
+                    <div class="tab-pane fade" id="v-pills-materi7" role="tabpane7" aria-labelledby="v-pills-materi7-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Firewall dalam Jaringan</h2>
+                                <p class="text-muted">
+                                    Firewall adalah sistem keamanan jaringan yang berfungsi untuk memantau, mengontrol, dan menyaring lalu lintas data yang masuk dan keluar dari suatu jaringan komputer. Firewall dapat berupa perangkat keras (hardware) atau perangkat lunak (software) yang bekerja untuk melindungi jaringan dari ancaman atau akses yang tidak sah.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Fungsi Firewall dalam Jaringan</h4>
+                                <ul>
+                                    <li><b>Memantau Lalu Lintas Jaringan:</b> Firewall memantau setiap paket data yang masuk atau keluar dari jaringan untuk memastikan hanya data yang sah yang diterima.</li>
+                                    <li><b>Mengontrol Akses:</b> Firewall mengontrol akses berdasarkan aturan yang telah ditentukan, seperti membatasi akses ke aplikasi tertentu atau situs web, serta mengizinkan akses hanya untuk pengguna yang sah.</li>
+                                    <li><b>Mencegah Akses yang Tidak Sah:</b> Firewall bertindak sebagai penghalang antara jaringan internal dan eksternal untuk mencegah serangan seperti hacking, malware, DDoS, dan akses tanpa izin lainnya.</li>
+                                    <li><b>Menjaga Kerahasiaan Data:</b> Dengan memblokir akses yang tidak sah, firewall membantu memastikan bahwa data yang berada di dalam jaringan tetap aman dan terlindungi.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Jenis-jenis Firewall</h4>
+                                <p>Firewall dapat dibagi dalam beberapa jenis berdasarkan cara kerjanya:</p>
+                                
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">1. Firewall Paket (Packet Filtering Firewall)</h5>
+                                    <ul>
+                                        <li>Menyaring lalu lintas berdasarkan informasi paket data seperti alamat IP, port, dan protokol.</li>
+                                        <li>Cocok untuk jaringan kecil dengan tingkat keamanan yang lebih rendah.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">2. Firewall Berbasis Status (Stateful Inspection Firewall)</h5>
+                                    <ul>
+                                        <li>Memeriksa header paket dan status koneksi untuk melacak dan memblokir paket yang tidak sesuai dengan status koneksi yang sah.</li>
+                                        <li>Memberikan tingkat keamanan lebih tinggi dibandingkan firewall paket.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">3. Firewall Proxy</h5>
+                                    <ul>
+                                        <li>Bertindak sebagai perantara komunikasi antara perangkat dalam jaringan internal dan eksternal.</li>
+                                        <li>Menyaring data berdasarkan aturan yang ditentukan dan memberikan kontrol lebih besar terhadap lalu lintas data.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">4. Firewall Aplikasi (Application Layer Firewall)</h5>
+                                    <ul>
+                                        <li>Beroperasi pada lapisan aplikasi dan menyaring data berdasarkan aplikasi atau layanan yang digunakan, seperti HTTP, FTP, atau DNS.</li>
+                                        <li>Memberikan perlindungan tambahan terhadap serangan yang lebih canggih.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-light border rounded">
+                                <h4 class="fw-bold">Pentingnya Firewall dalam Keamanan Jaringan</h4>
+                                <ul>
+                                    <li><b>Perlindungan terhadap ancaman luar:</b> Firewall mencegah serangan dari luar yang bisa merusak atau mengakses data yang sensitif.</li>
+                                    <li><b>Pengelolaan kebijakan akses:</b> Firewall memungkinkan administrator untuk menetapkan kebijakan akses yang tepat, sehingga hanya perangkat atau pengguna yang sah yang dapat mengakses jaringan.</li>
+                                    <li><b>Mencegah penyebaran malware:</b> Dengan mengontrol lalu lintas yang masuk dan keluar, firewall dapat mencegah perangkat yang terinfeksi malware untuk terhubung ke jaringan.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Firewall adalah komponen penting dalam menjaga keamanan jaringan. Fungsi utamanya adalah untuk memantau dan mengontrol lalu lintas data serta mencegah akses yang tidak sah ke dalam jaringan. Dengan menggunakan firewall yang tepat, organisasi dan pengguna dapat menjaga kerahasiaan, integritas, dan ketersediaan data dalam jaringan mereka.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Enkripsi dalam Jaringan -->
+                    <div class="tab-pane fade" id="v-pills-materi8" role="tabpane8" aria-labelledby="v-pills-materi8-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Enkripsi dalam Jaringan</h2>
+                                <p class="text-muted">
+                                    Enkripsi adalah proses mengubah data asli (plaintext) menjadi bentuk yang tidak dapat dibaca (ciphertext) dengan menggunakan algoritma matematis tertentu. Tujuan utama dari enkripsi adalah untuk melindungi data agar hanya pihak yang berwenang yang dapat mengaksesnya. Dalam konteks jaringan, enkripsi digunakan untuk memastikan bahwa data yang dikirimkan antar perangkat tidak dapat diakses atau dimanipulasi oleh pihak yang tidak sah.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Tujuan Enkripsi untuk Melindungi Data Selama Transmisi</h4>
+                                <ul>
+                                    <li><b>Keamanan Data:</b> Enkripsi melindungi kerahasiaan data saat dikirimkan dari satu perangkat ke perangkat lainnya. Data yang berhasil diintersepsi tanpa kunci dekripsi tetap tidak dapat dibaca.</li>
+                                    <li><b>Integritas Data:</b> Enkripsi membantu memastikan bahwa data yang diterima tidak dimodifikasi selama transmisi. Penerima dapat mendeteksi jika data tersebut telah diubah atau rusak.</li>
+                                    <li><b>Otentikasi Pengguna:</b> Enkripsi memastikan hanya pihak yang berwenang yang dapat mengakses data, meningkatkan otentikasi dan mengurangi penyalahgunaan identitas.</li>
+                                    <li><b>Mencegah Akses yang Tidak Sah:</b> Enkripsi mencegah pihak yang tidak sah untuk mengakses atau mencuri data penting selama transmisi, terutama dalam jaringan yang rentan seperti Wi-Fi publik.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Contoh Protokol yang Menggunakan Enkripsi</h4>
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">1. HTTPS (Hypertext Transfer Protocol Secure)</h5>
+                                    <ul>
+                                        <li><b>Fungsi:</b> HTTPS mengenkripsi data yang ditransfer antara browser dan server menggunakan SSL/TLS untuk komunikasi yang aman.</li>
+                                        <li><b>Keamanan:</b> Data yang dikirim antara pengguna dan server terlindungi dari pencurian atau modifikasi oleh pihak ketiga, sangat penting untuk transaksi online dan login akun.</li>
+                                        <li><b>Penggunaan:</b> HTTPS digunakan di situs web yang menangani informasi pribadi atau transaksi finansial, seperti perbankan online dan e-commerce.</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="bg-white border p-3 mb-3">
+                                    <h5 class="text-dark">2. VPN (Virtual Private Network)</h5>
+                                    <ul>
+                                        <li><b>Fungsi:</b> VPN mengenkripsi seluruh lalu lintas data antara perangkat pengguna dan server VPN, menyediakan akses internet yang aman melalui jaringan pribadi.</li>
+                                        <li><b>Keamanan:</b> VPN melindungi data yang dikirimkan dari penyadapan, terutama dalam jaringan publik seperti Wi-Fi di kafe atau bandara.</li>
+                                        <li><b>Penggunaan:</b> VPN digunakan untuk melindungi privasi pengguna, mengakses konten terbatas geografis, dan memberikan akses aman bagi karyawan yang bekerja dari jarak jauh.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Enkripsi merupakan bagian penting dalam menjaga keamanan data selama transmisi di jaringan. Protokol seperti HTTPS dan VPN memanfaatkan enkripsi untuk memastikan bahwa data yang dikirimkan tetap aman dan hanya dapat diakses oleh pihak yang berwenang. Dengan semakin berkembangnya ancaman terhadap keamanan data, penggunaan enkripsi menjadi suatu keharusan untuk melindungi informasi penting di dunia digital.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Manajemen Jaringan -->
+                    <div class="tab-pane fade" id="v-pills-materi9" role="tabpane9" aria-labelledby="v-pills-materi9-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Manajemen Jaringan</h2>
+                                <p class="text-muted">
+                                    Manajemen jaringan adalah serangkaian aktivitas yang dilakukan untuk memastikan bahwa jaringan komputer berjalan dengan efisien dan aman. Aktivitas ini melibatkan berbagai aspek, seperti pemantauan lalu lintas, identifikasi perangkat, dan penyelesaian masalah koneksi. Tujuan utama dari manajemen jaringan adalah untuk memastikan performa jaringan yang optimal, mencegah gangguan, dan mengidentifikasi serta memperbaiki masalah yang muncul.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Pemantauan Lalu Lintas Jaringan</h4>
+                                <p>
+                                    Pemantauan lalu lintas jaringan adalah proses yang digunakan untuk memantau dan menganalisis data yang mengalir di dalam jaringan. Hal ini bertujuan untuk mengetahui bagaimana data dikirim, apa yang mengarah ke kemacetan, dan apakah ada aktivitas yang mencurigakan.
+                                </p>
+                                <h5 class="fw-bold">Alat Pemantauan Lalu Lintas:</h5>
+                                <ul>
+                                    <li><b>Wireshark:</b> Alat untuk menangkap dan menganalisis paket data yang mengalir di jaringan.</li>
+                                    <li><b>Nagios:</b> Alat untuk pemantauan jaringan secara real-time yang memberi informasi tentang perangkat dan layanan dalam jaringan.</li>
+                                    <li><b>PRTG Network Monitor:</b> Alat pemantauan lalu lintas jaringan yang membantu mengidentifikasi masalah lalu lintas, seperti kemacetan atau kebocoran bandwidth.</li>
+                                </ul>
+                                <h5 class="fw-bold">Pentingnya Pemantauan Lalu Lintas:</h5>
+                                <ul>
+                                    <li><b>Mendeteksi Kemacetan Jaringan:</b> Memantau lalu lintas jaringan membantu mengetahui titik kemacetan yang menghambat kinerja jaringan.</li>
+                                    <li><b>Keamanan Jaringan:</b> Pemantauan lalu lintas membantu mendeteksi lalu lintas mencurigakan yang bisa menunjukkan adanya serangan atau malware.</li>
+                                    <li><b>Optimasi Kinerja:</b> Memantau data yang masuk dan keluar meningkatkan efisiensi jaringan dan memastikan kualitas layanan optimal.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Identifikasi Perangkat dalam Jaringan</h4>
+                                <p>
+                                    Identifikasi perangkat adalah proses untuk mengidentifikasi dan mengelola perangkat yang terhubung ke jaringan. Ini penting untuk mengetahui perangkat mana yang aktif dalam jaringan, serta untuk mengelola dan mengatur akses ke sumber daya jaringan.
+                                </p>
+                                <h5 class="fw-bold">Metode Identifikasi Perangkat:</h5>
+                                <ul>
+                                    <li><b>IP Address:</b> Alamat IP unik untuk setiap perangkat yang memungkinkan identifikasi dan pemantauan.</li>
+                                    <li><b>MAC Address:</b> Alamat MAC yang unik digunakan untuk mengidentifikasi perangkat di tingkat perangkat keras.</li>
+                                    <li><b>DHCP Server:</b> DHCP memberikan alamat IP otomatis, memungkinkan administrator memantau perangkat yang terhubung.</li>
+                                </ul>
+                                <h5 class="fw-bold">Alat Identifikasi Perangkat:</h5>
+                                <ul>
+                                    <li><b>Nmap:</b> Alat untuk memetakan perangkat dan layanan yang terhubung ke jaringan.</li>
+                                    <li><b>IP Scanner:</b> Alat untuk memindai jaringan dan mengidentifikasi perangkat yang terhubung.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Penyelesaian Masalah Koneksi Jaringan</h4>
+                                <p>
+                                    Penyelesaian masalah koneksi jaringan adalah proses untuk mengidentifikasi dan memperbaiki masalah yang memengaruhi koneksi antar perangkat di jaringan.
+                                </p>
+                                <h5 class="fw-bold">Langkah-langkah Penyelesaian Masalah:</h5>
+                                <ul>
+                                    <li><b>Periksa Koneksi Fisik:</b> Pastikan kabel jaringan, router, dan perangkat dalam keadaan baik.</li>
+                                    <li><b>Cek Alamat IP:</b> Periksa apakah perangkat memiliki alamat IP yang valid dengan perintah seperti <code>ipconfig</code> (Windows) atau <code>ifconfig</code> (Linux/Mac).</li>
+                                    <li><b>Tes Koneksi:</b> Gunakan perintah <code>ping</code> untuk memeriksa konektivitas antar perangkat.</li>
+                                    <li><b>Periksa Pengaturan Jaringan:</b> Pastikan konfigurasi jaringan seperti subnet mask dan gateway sudah benar.</li>
+                                    <li><b>Periksa Router dan Firewall:</b> Pastikan router berfungsi dengan baik dan tidak ada pengaturan firewall yang menghalangi koneksi.</li>
+                                </ul>
+                                <h5 class="fw-bold">Alat Penyelesaian Masalah Koneksi:</h5>
+                                <ul>
+                                    <li><b>Ping:</b> Alat untuk memeriksa konektivitas antar perangkat di jaringan.</li>
+                                    <li><b>Traceroute:</b> Alat untuk melacak jalur data antar perangkat di jaringan.</li>
+                                    <li><b>NetFlow Analyzer:</b> Alat untuk menganalisis aliran data dan mendeteksi masalah lalu lintas jaringan.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mt-5 p-4 bg-secondary text-white rounded">
+                                <h4 class="fw-bold">Kesimpulan</h4>
+                                <p>
+                                    Manajemen jaringan adalah aspek penting dalam menjaga agar jaringan komputer tetap berjalan dengan baik dan aman. Dengan pemantauan lalu lintas, identifikasi perangkat yang terhubung, serta penyelesaian masalah koneksi jaringan, administrator dapat memastikan bahwa jaringan berfungsi optimal. Menggunakan alat dan teknik yang tepat dalam manajemen jaringan dapat membantu mendeteksi masalah dengan cepat, meningkatkan kinerja jaringan, dan menjaga keamanan dari ancaman luar.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

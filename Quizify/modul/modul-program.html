@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Pembelajaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style-modul.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/modul.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="row bg-primary py-2 m-0">
+        <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/img/logo.png" alt="Logo" height="40" class="ms-3">
+                        Quizify
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 col-lg text-center text-white" style="margin-top: 10px;">
+            <h2>Pemrograman</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row custom-row">
+            <!-- Sidebar with Dropdown -->
+            <div class="col-12 col-lg-3 bg-dark py-4" style="flex: 0 0 auto;">
+                <h4 class="text-white text-center mb-4">Modul Pembelajaran</h4>
+
+                <div class="accordion" id="sidebarAccordion">
+                    <!-- Pengantar Pemrograman -->
+                    <div class="accordion-item active">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Pengantar Pemrograman
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-dark" id="v-pills-materi1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi1" role="tab" aria-controls="v-pills-materi1" aria-selected="true">Apa Itu Pemrograman?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi2" role="tab" aria-controls="v-pills-materi2" aria-selected="false">Bahasa Pemrograman</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi3" role="tab" aria-controls="v-pills-materi3" aria-selected="false">Integrated Development Environment (IDE)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Variabel dan Tipe Data -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Variabel dan Tipe Data
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi4" role="tab" aria-controls="v-pills-materi4" aria-selected="false">Variabel dalam Pemrograman</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi5" role="tab" aria-controls="v-pills-materi5" aria-selected="false">Tipe Data dalam Pemrograman</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kontrol Alur dan Fungsi -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Kontrol Alur dan Fungsi
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi6" role="tab" aria-controls="v-pills-materi6" aria-selected="false">Kondisional</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi7" role="tab" aria-controls="v-pills-materi7" aria-selected="false">Perulangan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi8" role="tab" aria-controls="v-pills-materi8" aria-selected="false">Definisi Fungsi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" id="v-pills-materi9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-materi9" role="tab" aria-controls="v-pills-materi9" aria-selected="false">Penggunaan Fungsi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="col-12 col-lg-9 py-4 materi">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <!-- apa itu pemrograman -->
+                    <div class="tab-pane fade show active" id="v-pills-materi1" role="tabpanel" aria-labelledby="v-pills-materi1-tab">
+                        <div class="container my-5">
+                            <h1 class="text-center mb-5 fw-bold text-dark">Materi Modul: Apa Itu Pemrograman?</h1>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h3 class="text-dark fw-semibold">Definisi Pemrograman</h3>
+                                <p>Pemrograman adalah proses membuat serangkaian instruksi yang dapat dijalankan oleh komputer untuk menyelesaikan suatu tugas atau memecahkan masalah. Instruksi-instruksi ini ditulis dalam bahasa pemrograman yang dapat dimengerti oleh mesin seperti Python, Java, atau C++.</p>
+                                <p>Secara umum, pemrograman adalah seni dan teknik menciptakan perangkat lunak yang dapat membantu pengguna dalam menyelesaikan berbagai masalah, baik yang sederhana seperti menghitung angka, hingga yang kompleks seperti menjalankan sistem kecerdasan buatan.</p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h3 class="text-dark fw-semibold">Tujuan Pemrograman Komputer</h3>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><strong>Otomatisasi Tugas:</strong> Mengurangi atau menghilangkan kebutuhan untuk melakukan pekerjaan manual berulang dengan menciptakan perangkat lunak yang dapat melakukannya secara otomatis.</li>
+                                    <li class="list-group-item"><strong>Efisiensi dan Produktivitas:</strong> Memastikan proses berjalan lebih cepat dan lebih akurat dibandingkan jika dilakukan oleh manusia.</li>
+                                    <li class="list-group-item"><strong>Pengembangan Solusi:</strong> Membantu menyelesaikan masalah dunia nyata melalui solusi berbasis teknologi seperti aplikasi mobile, game, atau alat bantu online.</li>
+                                    <li class="list-group-item"><strong>Menyediakan Inovasi Teknologi:</strong> Pemrograman memungkinkan pengembangan teknologi baru seperti robotika, kecerdasan buatan, dan perangkat pintar.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h3 class="text-dark fw-semibold">Proses Pemrograman: Menulis, Menguji, dan Menjalankan Kode</h3>
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item"><strong>Menulis Kode:</strong>
+                                        <ul>
+                                            <li>Programmer membuat serangkaian instruksi dalam bahasa pemrograman tertentu.</li>
+                                            <li>Biasanya dimulai dengan perencanaan algoritma atau struktur solusi sebelum menulis kode.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><strong>Mengompilasi atau Menafsirkan Kode:</strong>
+                                        <ul>
+                                            <li>Untuk beberapa bahasa seperti C++, kode harus dikompilasi menjadi bahasa mesin sebelum dijalankan.</li>
+                                            <li>Bahasa lainnya seperti Python langsung diterjemahkan oleh interpreter saat dijalankan.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><strong>Menguji Kode:</strong>
+                                        <ul>
+                                            <li>Setelah kode ditulis, programmer melakukan pengujian untuk memastikan bahwa program berjalan sesuai harapan.</li>
+                                            <li>Jika terdapat kesalahan (bug), programmer akan memperbaikinya melalui proses debugging.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><strong>Menjalankan dan Memelihara Kode:</strong>
+                                        <ul>
+                                            <li>Setelah kode berhasil diuji, program dijalankan untuk memenuhi fungsinya.</li>
+                                            <li>Pemeliharaan dilakukan untuk memperbarui atau meningkatkan perangkat lunak berdasarkan kebutuhan pengguna.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        
+                            <div class="p-4 bg-light border rounded">
+                                <h3 class="text-dark fw-semibold">Kebutuhan Akan Pemrograman dalam Dunia Teknologi</h3>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><strong>Pengembangan Teknologi Baru:</strong> Dunia teknologi seperti AI, IoT, dan Blockchain tidak dapat berkembang tanpa pemrograman. Setiap aplikasi atau perangkat pintar membutuhkan kode untuk menjalankan fungsinya.</li>
+                                    <li class="list-group-item"><strong>Industri Digital:</strong> Di era digital, hampir semua perusahaan menggunakan perangkat lunak untuk mengelola operasi mereka. Pemrograman memungkinkan terciptanya aplikasi seperti e-commerce, ERP, dan CRM.</li>
+                                    <li class="list-group-item"><strong>Meningkatkan Kualitas Hidup:</strong> Dari aplikasi kesehatan hingga layanan transportasi online, semua menggunakan teknologi pemrograman untuk meningkatkan efisiensi dan kenyamanan hidup manusia.</li>
+                                    <li class="list-group-item"><strong>Mendorong Kemajuan Pendidikan dan Penelitian:</strong> Pemrograman membantu menciptakan alat bantu pendidikan seperti platform e-learning. Dalam penelitian, program komputer digunakan untuk simulasi, analisis data, dan otomatisasi eksperimen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- bahasa pemrograman -->
+                    <div class="tab-pane fade" id="v-pills-materi2" role="tabpane2" aria-labelledby="v-pills-materi2-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Materi Modul: Bahasa Pemrograman</h2>
+                            </div>
+                    
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Apa itu Bahasa Pemrograman?</h4>
+                                <p>
+                                    Bahasa pemrograman adalah alat yang digunakan oleh manusia untuk memberikan instruksi kepada komputer dalam bentuk kode yang dapat dijalankan. Dengan kata lain, bahasa pemrograman adalah cara untuk "berkomunikasi" dengan komputer agar melakukan berbagai tugas, seperti menghitung angka, menampilkan data, atau menjalankan aplikasi.
+                                </p>
+                                <p>
+                                    Bahasa pemrograman terdiri dari serangkaian aturan sintaksis yang harus diikuti untuk menulis kode. Komputer akan membaca dan menerjemahkan kode ini melalui compiler atau interpreter agar dapat melaksanakan perintah yang diminta.
+                                </p>
+                            </div>
+                    
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Jenis-jenis Bahasa Pemrograman (High-Level vs Low-Level)</h4>
+                                <p>Bahasa pemrograman dapat dibedakan menjadi dua jenis utama berdasarkan tingkat abstraksinya:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>High-Level Languages (Bahasa Tingkat Tinggi):</strong> Dirancang untuk mempermudah pemrogram menulis kode dengan sintaks yang menyerupai bahasa manusia. <br>
+                                        <em>Contoh: Python, JavaScript, Java.</em>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Low-Level Languages (Bahasa Tingkat Rendah):</strong> Mendekati bahasa mesin komputer, seperti kode biner atau Assembly. Memberikan kontrol penuh terhadap perangkat keras.
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Bahasa Pemrograman yang Umum Digunakan</h4>
+                                <p>Berikut adalah beberapa bahasa pemrograman yang sering digunakan:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><strong>JavaScript:</strong> Digunakan untuk pengembangan web interaktif.</li>
+                                    <li class="list-group-item"><strong>Python:</strong> Populer untuk data science, machine learning, dan pengembangan web.</li>
+                                    <li class="list-group-item"><strong>Java:</strong> Stabil dan sering digunakan untuk aplikasi Android dan perangkat lunak perusahaan.</li>
+                                    <li class="list-group-item"><strong>C++:</strong> Ideal untuk aplikasi performa tinggi seperti game dan sistem operasi.</li>
+                                </ul>
+                            </div>
+                    
+                            <div class="p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Bahasa Pemrograman untuk Pengembangan Web, Aplikasi, dan Software</h4>
+                                <p>Bahasa pemrograman dibedakan berdasarkan tujuan penggunaannya, di antaranya:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Pengembangan Web:</strong>
+                                        <ul class="mb-0">
+                                            <li>HTML, CSS, JavaScript: Membentuk dasar pengembangan web.</li>
+                                            <li>PHP: Bahasa pemrograman sisi server.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Pengembangan Aplikasi Mobile:</strong>
+                                        <ul class="mb-0">
+                                            <li>Java dan Kotlin: Untuk pengembangan aplikasi Android.</li>
+                                            <li>Swift: Untuk pengembangan aplikasi iOS.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Pengembangan Software:</strong>
+                                        <ul class="mb-0">
+                                            <li>C++: Digunakan untuk perangkat lunak grafis dan aplikasi performa tinggi.</li>
+                                            <li>Python: Mendukung pengembangan perangkat lunak dan prototipe cepat.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Integrated Development Environment -->
+                    <div class="tab-pane fade" id="v-pills-materi3" role="tabpane3" aria-labelledby="v-pills-materi3-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Materi Modul: Integrated Development Environment (IDE)</h2>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Apa Itu IDE?</h4>
+                                <p>
+                                    Integrated Development Environment (IDE) adalah sebuah perangkat lunak yang menyediakan berbagai alat bantu pemrograman dalam satu lingkungan terpadu. Tujuan utama IDE adalah untuk mempermudah dan mempercepat proses pengembangan perangkat lunak dengan menyediakan fitur-fitur yang dibutuhkan oleh seorang programmer.
+                                </p>
+                                <p>
+                                    IDE menggabungkan berbagai fungsi, seperti menulis kode, mendeteksi kesalahan, dan mengeksekusi program, ke dalam satu platform. Hal ini memungkinkan programmer untuk lebih produktif dibandingkan jika menggunakan alat yang terpisah.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Fitur-fitur Utama dalam IDE</h4>
+                                <p>IDE memiliki beberapa fitur utama yang mendukung proses pengembangan perangkat lunak, di antaranya:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Editor Kode:</strong> Editor kode berfungsi untuk menulis dan mengedit kode program. Dilengkapi dengan fitur seperti highlight sintaks, auto-completion, dan indentasi otomatis untuk memudahkan penulisan kode.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Debugger:</strong> Alat yang digunakan untuk mendeteksi, menganalisis, dan memperbaiki kesalahan (bug) dalam kode program. Dengan debugger, programmer dapat menjalankan program secara langkah demi langkah untuk melihat bagaimana kode bekerja dan menemukan sumber masalah.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Compiler/Interpreter:</strong> Compiler berfungsi untuk menerjemahkan kode sumber menjadi bahasa mesin yang dapat dipahami oleh komputer. Pada beberapa bahasa pemrograman seperti Python, IDE dilengkapi interpreter yang langsung mengeksekusi kode tanpa perlu kompilasi.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Manajemen Proyek:</strong> IDE sering kali memiliki fitur manajemen proyek untuk mengatur file-file kode dalam struktur direktori yang rapi. Fitur ini memudahkan kolaborasi dalam proyek pemrograman berskala besar.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Integrasi dengan Kontrol Versi:</strong> Beberapa IDE memiliki integrasi langsung dengan sistem kontrol versi seperti Git, yang memungkinkan programmer untuk melacak perubahan kode dan berkolaborasi dengan tim.
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Contoh IDE yang Populer</h4>
+                                <p>Berikut beberapa contoh IDE yang banyak digunakan oleh programmer di seluruh dunia:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Visual Studio Code (VS Code):</strong> 
+                                        <ul class="mb-0">
+                                            <li>Fungsi Utama: Editor kode ringan dengan dukungan ekstensi untuk berbagai bahasa pemrograman.</li>
+                                            <li>Keunggulan: Gratis, open-source, dan memiliki banyak fitur seperti highlight sintaks, debugging, serta integrasi dengan Git.</li>
+                                            <li>Penggunaan: Sangat populer untuk pengembangan web, aplikasi, dan scripting.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Eclipse:</strong>
+                                        <ul class="mb-0">
+                                            <li>Fungsi Utama: IDE yang dirancang khusus untuk pengembangan perangkat lunak menggunakan Java, namun mendukung berbagai bahasa lain melalui plugin.</li>
+                                            <li>Keunggulan: Gratis, open-source, dan memiliki ekosistem plugin yang sangat luas.</li>
+                                            <li>Penggunaan: Umumnya digunakan dalam pengembangan aplikasi berbasis Java, Android, dan enterprise.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>PyCharm:</strong>
+                                        <ul class="mb-0">
+                                            <li>Fungsi Utama: IDE khusus untuk bahasa pemrograman Python.</li>
+                                            <li>Keunggulan: Menyediakan fitur lengkap seperti debugging, analisis kode, dan integrasi dengan framework Python seperti Django dan Flask.</li>
+                                            <li>Penggunaan: Digunakan secara luas untuk pengembangan aplikasi berbasis Python, baik itu web development, machine learning, atau data analysis.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Variabel dalam Pemrograman -->
+                    <div class="tab-pane fade" id="v-pills-materi4" role="tabpane4" aria-labelledby="v-pills-materi4-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Variabel dalam Pemrograman</h2>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. Definisi Variabel</h4>
+                                <p>
+                                    Variabel dalam pemrograman adalah tempat penyimpanan yang digunakan untuk menyimpan data yang dapat diubah selama eksekusi program. Setiap variabel memiliki nama yang unik dan tipe data yang menunjukkan jenis data yang dapat disimpan, seperti angka, teks, atau nilai boolean.
+                                </p>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. Cara Mendeklarasikan Variabel dalam Bahasa Pemrograman</h4>
+                                <p>
+                                    Deklarasi variabel adalah proses untuk membuat variabel dan menetapkan tipe data yang akan digunakan. Setiap bahasa pemrograman memiliki cara yang berbeda dalam mendeklarasikan variabel. Berikut adalah contoh deklarasi variabel di beberapa bahasa pemrograman:
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Python:</strong>
+                                        <pre><code>nama = "John"  # Variabel 'nama' bertipe string <br>usia = 25      # Variabel 'usia' bertipe integer</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Java:</strong>
+                                        <pre><code>String nama = "John";  // Variabel 'nama' bertipe String <br>int usia = 25;         // Variabel 'usia' bertipe integer</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>C++:</strong>
+                                        <pre><code>string nama = "John";  // Variabel 'nama' bertipe string <br>int usia = 25;         // Variabel 'usia' bertipe integer</code></pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. Penggunaan Variabel untuk Menyimpan Data</h4>
+                                <p>
+                                    Variabel digunakan untuk menyimpan data sementara yang dibutuhkan oleh program. Misalnya, variabel dapat digunakan untuk menyimpan input pengguna, hasil perhitungan, atau status program. Data dalam variabel dapat diakses atau dimodifikasi kapan saja sesuai kebutuhan.
+                                </p>
+                                <p><strong>Contoh:</strong></p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Menampilkan Nama Pengguna:</strong>
+                                        <pre><code>nama = "Alice" <br>print("Halo, " + nama)  # Output: Halo, Alice</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Perhitungan Sederhana:</strong>
+                                        <pre><code>a = 10 <br>b = 5 <br>hasil = a + b <br>print(hasil)  # Output: 15</code></pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">4. Menetapkan Nilai Variabel</h4>
+                                <p>
+                                    Nilai variabel dapat ditetapkan pada saat deklarasi atau setelahnya. Menetapkan nilai berarti memberikan nilai tertentu kepada variabel yang telah dideklarasikan. Variabel dapat diubah nilainya sesuai kebutuhan program.
+                                </p>
+                                <p><strong>Contoh penetapan nilai:</strong></p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Python:</strong>
+                                        <pre><code>x = 10  # Variabel 'x' diberi nilai 10 <br>x = 20  # Nilai variabel 'x' diubah menjadi 20 <br>print(x)  # Output: 20</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Java:</strong>
+                                        <pre><code>int x = 10;  // Variabel 'x' diberi nilai 10 <br>x = 20;      // Nilai variabel 'x' diubah menjadi 20 <br>System.out.println(x);  // Output: 20</code></pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Tipe Data dalam Pemrograman -->
+                    <div class="tab-pane fade" id="v-pills-materi5" role="tabpane5" aria-labelledby="v-pills-materi5-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Tipe Data dalam Pemrograman</h2>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. Tipe Data Primitif (Angka, Teks, Boolean)</h4>
+                                <p>
+                                    Tipe data primitif adalah tipe data dasar yang sudah ada dalam hampir semua bahasa pemrograman. Tipe data ini digunakan untuk menyimpan nilai yang sederhana.
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Angka (Number):</strong> Digunakan untuk menyimpan nilai numerik. Bisa berupa bilangan bulat (integer) atau bilangan desimal (float).
+                                        <pre><code>Python: x = 5 (integer), y = 3.14 (float)</code></pre>
+                                        <pre><code>Java: int x = 5;, double y = 3.14;</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Teks (String):</strong> Digunakan untuk menyimpan urutan karakter, seperti kata atau kalimat.
+                                        <pre><code>Python: nama = "John"</code></pre>
+                                        <pre><code>Java: String nama = "John";</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Boolean:</strong> Digunakan untuk menyimpan nilai benar (True) atau salah (False). Biasanya digunakan dalam kondisi logika.
+                                        <pre><code>Python: is_active = True</code></pre>
+                                        <pre><code>Java: boolean isActive = true;</code></pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. Tipe Data Kompleks (Array, Objek)</h4>
+                                <p>
+                                    Tipe data kompleks digunakan untuk menyimpan lebih dari satu nilai dalam satu variabel.
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Array:</strong> Struktur data yang digunakan untuk menyimpan sejumlah nilai yang sejenis dalam satu variabel.
+                                        <pre><code>Python: arr = [1, 2, 3, 4]</code></pre>
+                                        <pre><code>Java: int[] arr = {1, 2, 3, 4};</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Objek:</strong> Objek adalah struktur data yang menyimpan nilai-nilai dalam bentuk pasangan atribut dan nilai. Objek adalah contoh tipe data kompleks dalam pemrograman berorientasi objek (OOP).
+                                        <pre><code>Python: class Person: def __init__(self, name, age): self.name = name self.age = age</code></pre>
+                                        <pre><code>Java: class Person { String name; int age; Person(String name, int age) { this.name = name; this.age = age; } }</code></pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. Tipe Data dalam Berbagai Bahasa Pemrograman (JavaScript, Python, Java)</h4>
+                                <p>
+                                    Berbagai bahasa pemrograman memiliki cara untuk mendeklarasikan tipe data, meskipun konsep dasarnya serupa.
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>JavaScript:</strong>
+                                        <pre><code>Angka: let x = 10;</code></pre>
+                                        <pre><code>Teks: let nama = "Alice";</code></pre>
+                                        <pre><code>Boolean: let isActive = true;</code></pre>
+                                        <pre><code>Array: let arr = [1, 2, 3];</code></pre>
+                                        <pre><code>Objek: let person = { name: "John", age: 30 };</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Python:</strong>
+                                        <pre><code>Angka: x = 10 (integer), y = 3.14 (float)</code></pre>
+                                        <pre><code>Teks: nama = "Alice"</code></pre>
+                                        <pre><code>Boolean: is_active = True</code></pre>
+                                        <pre><code>Array (List): arr = [1, 2, 3]</code></pre>
+                                        <pre><code>Objek: class Person: def __init__(self, name, age): self.name = name self.age = age</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Java:</strong>
+                                        <pre><code>Angka: int x = 10;, double y = 3.14;</code></pre>
+                                        <pre><code>Teks: String nama = "Alice";</code></pre>
+                                        <pre><code>Boolean: boolean isActive = true;</code></pre>
+                                        <pre><code>Array: int[] arr = {1, 2, 3};</code></pre>
+                                        <pre><code>Objek: class Person { String name; int age; Person(String name, int age) { this.name = name; this.age = age; } }</code></pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">4. Konversi Tipe Data (Casting)</h4>
+                                <p>
+                                    Konversi tipe data atau casting adalah proses mengubah nilai dari satu tipe data ke tipe data lain.
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Implicit Casting (Upcasting):</strong> Konversi tipe data yang lebih kecil ke tipe data yang lebih besar secara otomatis.
+                                        <pre><code>Java: int x = 5; double y = x; // (int diubah menjadi double secara otomatis)</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Explicit Casting (Downcasting):</strong> Konversi tipe data yang lebih besar ke tipe data yang lebih kecil secara eksplisit.
+                                        <pre><code>Java: double x = 3.14; int y = (int) x; // (double diubah menjadi int)</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Casting dalam Python:</strong>
+                                        <pre><code>Explicit: x = 3.14 → int(x) // (mengubah float menjadi integer)</code></pre>
+                                        <pre><code>Implicit: Python secara otomatis mengonversi tipe data yang lebih kecil ke tipe data yang lebih besar ketika diperlukan.</code></pre>
+                                        <p><strong>Contoh dalam Python:</strong></p>
+                                        <pre><code>x = 5         # integer<br>y = 3.14      # float 
+                                            <br># Implicit casting <br>z = x + y     # hasilnya float karena Python otomatis mengonversi integer menjadi float
+                                            <br># Explicit casting <br>x = int(y)    # mengonversi float menjadi integer <br>print(x)       # Output: 3</code></pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Kondisional -->
+                    <div class="tab-pane fade" id="v-pills-materi6" role="tabpane6" aria-labelledby="v-pills-materi6-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Kondisional (if, else, switch)</h2>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. Fungsi if dan else dalam Pemrograman</h4>
+                                <p>
+                                    Kondisional if dan else digunakan untuk mengontrol alur eksekusi program berdasarkan suatu kondisi. Jika kondisi yang diberikan bernilai benar (True), maka blok kode di dalam if akan dijalankan. Jika tidak, maka blok kode di dalam else yang akan dijalankan.
+                                </p>
+                                <pre><code>Python:<br>if kondisi:<br>    # kode yang dijalankan jika kondisi True<br>else:<br>    # kode yang dijalankan jika kondisi False</code></pre>
+                                <pre><code>Java:<br>if (kondisi) {<br>    // kode yang dijalankan jika kondisi True<br>} else {<br>    // kode yang dijalankan jika kondisi False<br>}</code></pre>
+                                <p><strong>Contoh:</strong></p>
+                                <pre><code>Python:<br>x = 10<br>if x > 5:<br>    print("x lebih besar dari 5")<br>else:<br>    print("x kurang dari atau sama dengan 5")</code></pre>
+                                <pre><code>Java:<br>int x = 10;<br>if (x > 5) {<br>    System.out.println("x lebih besar dari 5");<br>} else {<br>    System.out.println("x kurang dari atau sama dengan 5");<br>}</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. Penggunaan Switch untuk Pilihan Kondisi</h4>
+                                <p>
+                                    switch digunakan untuk mengevaluasi beberapa kondisi yang mungkin dan menjalankan blok kode tertentu berdasarkan kecocokan dengan nilai yang diberikan. Biasanya, switch lebih efisien digunakan ketika ada banyak kondisi yang perlu diperiksa dibandingkan menggunakan banyak if-else.
+                                </p>
+                                <pre><code>Java:<br>switch (ekspresi) {<br>    case nilai1:<br>        // kode jika ekspresi == nilai1<br>        break;<br>    case nilai2:<br>        // kode jika ekspresi == nilai2<br>        break;<br>    default:<br>        // kode jika tidak ada yang cocok<br>}</code></pre>
+                                <p><strong>Contoh:</strong></p>
+                                <pre><code>Java:<br>int hari = 3;<br>switch (hari) {<br>    case 1:<br>        System.out.println("Senin");<br>        break;<br>    case 2:<br>        System.out.println("Selasa");<br>        break;<br>    case 3:<br>        System.out.println("Rabu");<br>        break;<br>    default:<br>        System.out.println("Hari tidak valid");<br>}</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. Menangani Kondisi Logika (AND, OR, NOT)</h4>
+                                <p>
+                                    Kondisi logika sering digunakan dalam pernyataan if, else, dan switch untuk memeriksa lebih dari satu kondisi. Operator logika utama yang digunakan adalah AND, OR, dan NOT.
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>AND (&&):</strong> Kondisi bernilai True jika kedua ekspresi bernilai True.
+                                        <pre><code>Python: if x > 5 and y < 10:</code></pre>
+                                        <pre><code>Java: if (x > 5 && y < 10)</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>OR (||):</strong> Kondisi bernilai True jika salah satu ekspresi bernilai True.
+                                        <pre><code>Python: if x > 5 or y < 10:</code></pre>
+                                        <pre><code>Java: if (x > 5 || y < 10)</code></pre>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>NOT (!):</strong> Mengubah nilai Boolean menjadi sebaliknya. Jika ekspresi bernilai True, NOT mengubahnya menjadi False, dan sebaliknya.
+                                        <pre><code>Python: if not x == 5:</code></pre>
+                                        <pre><code>Java: if (!(x == 5))</code></pre>
+                                    </li>
+                                </ul>
+                                <p><strong>Contoh dalam Python:</strong></p>
+                                <pre><code>Python:<br>x = 10<br>y = 5<br>if x > 5 and y < 10:<br>    print("Kedua kondisi benar")<br>else:<br>    print("Salah satu kondisi salah")<br><br>if x == 10 or y > 10:<br>    print("Salah satu kondisi benar")<br><br>if not x == 5:<br>    print("x bukan 5")</code></pre>
+                                <p><strong>Contoh dalam Java:</strong></p>
+                                <pre><code>Java:<br>int x = 10;<br>int y = 5;<br>if (x > 5 && y < 10) {<br>    System.out.println("Kedua kondisi benar");<br>} else {<br>    System.out.println("Salah satu kondisi salah");<br>}<br><br>if (x == 10 || y > 10) {<br>    System.out.println("Salah satu kondisi benar");<br>}<br><br>if (!(x == 5)) {<br>    System.out.println("x bukan 5");<br>}</code></pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Perulangan -->
+                    <div class="tab-pane fade" id="v-pills-materi7" role="tabpane7" aria-labelledby="v-pills-materi7-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Perulangan (for, while, do-while)</h2>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. Penggunaan Perulangan for</h4>
+                                <p>
+                                    Perulangan for digunakan ketika kita mengetahui jumlah iterasi yang ingin dijalankan sebelumnya. Biasanya, for digunakan untuk perulangan yang melibatkan indeks atau penghitung.
+                                </p>
+                                <pre><code>Python:<br>for variabel in range(start, stop, step):<br>    # kode yang dijalankan</code></pre>
+                                <pre><code>Java:<br>for (inisialisasi; kondisi; increment) {<br>    // kode yang dijalankan<br>}</code></pre>
+                                <p><strong>Contoh:</strong></p>
+                                <pre><code>Python:<br>for i in range(1, 6):<br>    print(i)<br>Output: 1 2 3 4 5</code></pre>
+                                <pre><code>Java:<br>for (int i = 1; i <= 5; i++) {<br>    System.out.println(i);<br>}<br>Output: 1 2 3 4 5</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. Penggunaan Perulangan while dan do-while</h4>
+                                <p>
+                                    Perulangan while dan do-while digunakan ketika kita tidak tahu pasti jumlah iterasi yang dibutuhkan, tetapi kita memiliki kondisi yang harus dipenuhi selama perulangan.
+                                </p>
+                                <h5 class="fw-semibold">Perulangan while</h5>
+                                <p>Akan terus berjalan selama kondisi yang diberikan bernilai true.</p>
+                                <pre><code>Python:<br>while kondisi:<br>    # kode yang dijalankan</code></pre>
+                                <pre><code>Java:<br>while (kondisi) {<br>    // kode yang dijalankan<br>}</code></pre>
+                                <p><strong>Contoh:</strong></p>
+                                <pre><code>Python:<br>i = 1<br>while i <= 5:<br>    print(i)<br>    i += 1</code></pre>
+                                <pre><code>Java:<br>int i = 1;<br>while (i <= 5) {<br>    System.out.println(i);<br>    i++;<br>}</code></pre>
+                                <h5 class="fw-semibold">Perulangan do-while</h5>
+                                <p>Mirip dengan while, tetapi perulangan ini dijalankan minimal satu kali sebelum memeriksa kondisi, karena kondisi diperiksa setelah eksekusi blok perulangan.</p>
+                                <pre><code>Java:<br>do {<br>    // kode yang dijalankan<br>} while (kondisi);</code></pre>
+                                <p><strong>Contoh:</strong></p>
+                                <pre><code>Java:<br>int i = 1;<br>do {<br>    System.out.println(i);<br>    i++;<br>} while (i <= 5);</code></pre>
+                                <p><em>Catatan:</em> Python tidak memiliki do-while secara eksplisit, tetapi bisa disimulasikan dengan menggunakan while dan break.
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. Menggunakan break dan continue dalam Perulangan</h4>
+                                <p>
+                                    <strong>break:</strong> Menghentikan perulangan lebih cepat dan keluar dari perulangan meskipun kondisi perulangan belum tercapai.<br>
+                                    <strong>continue:</strong> Melewatkan iterasi saat ini dan melanjutkan perulangan ke iterasi berikutnya tanpa mengeksekusi sisa kode di dalam perulangan.
+                                </p>
+                                <p><strong>Contoh break:</strong></p>
+                                <pre><code>Python:<br>for i in range(1, 6):<br>    if i == 3:<br>        break<br>    print(i)<br>Output: 1 2</code></pre>
+                                <pre><code>Java:<br>for (int i = 1; i <= 5; i++) {<br>    if (i == 3) {<br>        break;<br>    }<br>    System.out.println(i);<br>}<br>Output: 1 2</code></pre>
+                                <p><strong>Contoh continue:</strong></p>
+                                <pre><code>Python:<br>for i in range(1, 6):<br>    if i == 3:<br>        continue<br>    print(i)<br>Output: 1 2 4 5</code></pre>
+                                <pre><code>Java:<br>for (int i = 1; i <= 5; i++) {<br>    if (i == 3) {<br>        continue;<br>    }<br>    System.out.println(i);<br>}<br>Output: 1 2 4 5</code></pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Definisi Fungsi -->
+                    <div class="tab-pane fade" id="v-pills-materi8" role="tabpane8" aria-labelledby="v-pills-materi8-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Definisi Fungsi</h2>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. Apa itu Fungsi dalam Pemrograman?</h4>
+                                <p>
+                                    Fungsi dalam pemrograman adalah sekumpulan pernyataan atau kode yang dikelompokkan bersama untuk melakukan tugas tertentu. Fungsi menerima input (parameter), melakukan operasi atau perhitungan, dan dapat mengembalikan output (nilai kembali). Fungsi memungkinkan pengembang untuk menulis kode yang modular dan terstruktur.
+                                </p>
+                                <p>Contoh sederhana dari sebuah fungsi dalam pemrograman adalah fungsi untuk menjumlahkan dua angka.</p>
+                                <pre><code>Contoh Fungsi dalam Python:<br>def tambah(a, b):<br>    return a + b</code></pre>
+                                <pre><code>Contoh Fungsi dalam Java:<br>public int tambah(int a, int b) {<br>    return a + b;<br>}</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. Mengapa Fungsi Diperlukan dalam Pemrograman?</h4>
+                                <p>
+                                    Fungsi memiliki beberapa manfaat utama dalam pemrograman:
+                                </p>
+                                <ul>
+                                    <li><strong>Modularitas:</strong> Fungsi memungkinkan kode dibagi menjadi bagian-bagian kecil yang masing-masing memiliki tujuan tertentu. Ini membuat kode lebih mudah dipahami dan dikelola.</li>
+                                    <li><strong>Penggunaan Kembali Kode (Reusability):</strong> Fungsi dapat dipanggil berkali-kali dengan parameter berbeda tanpa harus menulis ulang kode yang sama. Hal ini mengurangi redundansi dalam program.</li>
+                                    <li><strong>Pemeliharaan Kode:</strong> Jika ada kesalahan atau perubahan yang perlu dilakukan, fungsi memungkinkan perubahan hanya dilakukan di satu tempat, bukan di seluruh program.</li>
+                                    <li><strong>Abstraksi:</strong> Fungsi menyembunyikan implementasi rinci dan hanya menunjukkan antarmuka atau fungsinya. Hal ini membuat program lebih mudah digunakan dan dipahami.</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. Struktur Fungsi: Deklarasi, Parameter, dan Nilai Kembali</h4>
+                                <p>
+                                    Fungsi dalam pemrograman biasanya memiliki tiga bagian utama: deklarasi fungsi, parameter, dan nilai kembali (return value).
+                                </p>
+                                <h5 class="fw-semibold">Deklarasi Fungsi</h5>
+                                <p>Bagian ini mendefinisikan nama fungsi, tipe data yang dikembalikan (optional), dan parameter (jika ada).</p>
+                                <pre><code>Python: def digunakan untuk mendeklarasikan fungsi.</code></pre>
+                                <pre><code>Java: Tipe data pengembalian (seperti int, void, dll.) diikuti nama fungsi dan parameter.</code></pre>
+                                <h5 class="fw-semibold">Parameter</h5>
+                                <p>Merupakan variabel yang digunakan dalam fungsi untuk menerima nilai input saat fungsi dipanggil. Parameter dapat memiliki tipe data yang berbeda.</p>
+                                <pre><code>Contoh:<br>Python: def tambah(a, b):<br>Java: public int tambah(int a, int b) {</code></pre>
+                                <h5 class="fw-semibold">Nilai Kembali (Return Value)</h5>
+                                <p>Fungsi dapat mengembalikan nilai setelah melaksanakan operasi tertentu. Nilai ini bisa digunakan oleh pemanggil fungsi.</p>
+                                <pre><code>Python: Fungsi mengembalikan nilai menggunakan return.</code></pre>
+                                <pre><code>Java: Fungsi mengembalikan nilai menggunakan return dengan tipe data yang sesuai.</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Contoh Fungsi dalam Python:</h4>
+                                <pre><code>def tambah(a, b):  # deklarasi fungsi dengan dua parameter<br>    return a + b    # mengembalikan hasil penjumlahan</code></pre>
+                                <h4 class="text-dark fw-semibold">Contoh Fungsi dalam Java:</h4>
+                                <pre><code>public int tambah(int a, int b) {  // deklarasi fungsi dengan dua parameter<br>    return a + b;  // mengembalikan hasil penjumlahan<br>}</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">Contoh Penggunaan Fungsi:</h4>
+                                <h5 class="fw-semibold">Python:</h5>
+                                <pre><code>def kali(a, b):<br>    return a * b<br><br>hasil = kali(3, 4)<br>print(hasil)  # Output: 12</code></pre>
+                                <h5 class="fw-semibold">Java:</h5>
+                                <pre><code>public class Main {<br>    public static void main(String[] args) {<br>        int hasil = kali(3, 4);<br>        System.out.println(hasil);  // Output: 12<br>    }<br><br>    public static int kali(int a, int b) {<br>        return a * b;<br>    }<br>}</code></pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Penggunaan Fungsi -->
+                    <div class="tab-pane fade" id="v-pills-materi9" role="tabpane9" aria-labelledby="v-pills-materi9-tab">
+                        <div class="container my-5">
+                            <div class="text-center mb-5">
+                                <h2 class="text-dark fw-bold">Modul Materi: Penggunaan Fungsi</h2>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">1. Fungsi Tanpa Parameter dan Nilai Kembali</h4>
+                                <p>
+                                    Fungsi tanpa parameter tidak membutuhkan input dari luar untuk menjalankan tugasnya, sementara fungsi tanpa nilai kembali (return value) tidak mengembalikan hasil apapun setelah dieksekusi.
+                                </p>
+                                <h5 class="fw-semibold">Sintaks Fungsi Tanpa Parameter dan Nilai Kembali:</h5>
+                                <pre><code>Python:<br>def tampilkan_hello():<br>    print("Hello, World!")</code></pre>
+                                <pre><code>Java:<br>public void tampilkanHello() {<br>    System.out.println("Hello, World!");<br>}</code></pre>
+                                <h5 class="fw-semibold">Contoh Penggunaan:</h5>
+                                <pre><code>Python:<br>def tampilkan_hello():<br>    print("Hello, World!")<br><br>tampilkan_hello()  # Output: Hello, World!</code></pre>
+                                <pre><code>Java:<br>public class Main {<br>    public static void main(String[] args) {<br>        tampilkanHello();  // Output: Hello, World!<br>    }<br><br>    public static void tampilkanHello() {<br>        System.out.println("Hello, World!");<br>    }<br>}</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">2. Fungsi dengan Parameter dan Nilai Kembali</h4>
+                                <p>
+                                    Fungsi dengan parameter membutuhkan input untuk melakukan operasi tertentu, dan mengembalikan hasil (nilai kembali). Parameter memungkinkan fungsi untuk bekerja dengan data yang berbeda setiap kali dipanggil.
+                                </p>
+                                <h5 class="fw-semibold">Sintaks Fungsi dengan Parameter dan Nilai Kembali:</h5>
+                                <pre><code>Python:<br>def tambah(a, b):<br>    return a + b</code></pre>
+                                <pre><code>Java:<br>public int tambah(int a, int b) {<br>    return a + b;<br>}</code></pre>
+                                <h5 class="fw-semibold">Contoh Penggunaan:</h5>
+                                <pre><code>Python:<br>def tambah(a, b):<br>    return a + b<br><br>hasil = tambah(3, 4)<br>print(hasil)  # Output: 7</code></pre>
+                                <pre><code>Java:<br>public class Main {<br>    public static void main(String[] args) {<br>        int hasil = tambah(3, 4);<br>        System.out.println(hasil);  // Output: 7<br>    }<br><br>    public static int tambah(int a, int b) {<br>        return a + b;<br>    }<br>}</code></pre>
+                            </div>
+                        
+                            <div class="mb-4 p-4 bg-light border rounded">
+                                <h4 class="text-dark fw-semibold">3. Fungsi Rekursif (Fungsi yang Memanggil Dirinya Sendiri)</h4>
+                                <p>
+                                    Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri untuk menyelesaikan tugasnya. Fungsi rekursif biasanya digunakan untuk masalah yang dapat dibagi menjadi sub-masalah yang lebih kecil.
+                                </p>
+                                <h5 class="fw-semibold">Sintaks Fungsi Rekursif:</h5>
+                                <pre><code>Python:<br>def faktorial(n):<br>    if n == 0:<br>        return 1<br>    else:<br>        return n * faktorial(n - 1)</code></pre>
+                                <pre><code>Java:<br>public int faktorial(int n) {<br>    if (n == 0) {<br>        return 1;<br>    } else {<br>        return n * faktorial(n - 1);<br>    }<br>}</code></pre>
+                                <h5 class="fw-semibold">Contoh Penggunaan:</h5>
+                                <pre><code>Python:<br>def faktorial(n):<br>    if n == 0:<br>        return 1<br>    else:<br>        return n * faktorial(n - 1)<br><br>hasil = faktorial(5)<br>print(hasil)  # Output: 120</code></pre>
+                                <pre><code>Java:<br>public class Main {<br>    public static void main(String[] args) {<br>        int hasil = faktorial(5);<br>        System.out.println(hasil);  // Output: 120<br>    }<br><br>    public static int faktorial(int n) {<br>        if (n == 0) {<br>            return 1;<br>        } else {<br>            return n * faktorial(n - 1);<br>        }<br>    }<br>}</code></pre>
+                                <h5 class="fw-semibold">Penjelasan:</h5>
+                                <ul>
+                                    <li>Fungsi rekursif biasanya membutuhkan basis kasus yang berhenti untuk mencegah rekursi tanpa batas. Dalam contoh faktorial, basis kasusnya adalah ketika n == 0, yang akan mengembalikan 1.</li>
+                                    <li>Setiap kali fungsi dipanggil, nilai n berkurang hingga mencapai nilai 0, di mana rekursi berhenti.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Pilihan Ganda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-dark text-start py-3" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid" style="width: auto; height: 40px;">
+                </span>
+                <span>Quizify</span>
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-5">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navcol-5" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#Modul_Pembelajaran">Modul Pembelajaran</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Kuis">Kuis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Progres">Progres</a></li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" href="#">Log In</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- jumbotron -->
+    <div class="position-relative" style="height: 750px; margin-top: 0;">
+        <img class="img-fluid w-100 h-100 position-absolute fit-cover" src="img/bg.jpg" alt="Background Image" style="object-fit: cover; z-index: -1;">
+        <div class="container d-flex flex-column justify-content-center h-100">
+            <div class="row">
+                <div class="col-md-6 col-xl-4 offset-md-2">
+                    <div style="max-width: 350px;">
+                        <h1 class="text-uppercase fw-bold">Quizify <br>Tes Pengetahuanmu Sekarang!</h1>
+                        <p class="my-3">Mulai perjalanan Anda dalam mempelajari teknologi dengan kuis interaktif dan materi berkualitas. Tes kemampuan Anda hari ini!</p>
+                        <a class="btn btn-primary btn-lg me-2" role="button" href="#Kuis">Mulai Kuis</a>
+                        <a class="btn btn-outline-primary btn-lg" role="button" href="#Modul_Pembelajaran">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- modul pembelajaran -->
+    <div class="container-fluid text-start bg-primary " style="padding: 40px 20px 20px 20px; margin: 0 ; color: white; box-shadow: 0px -30px 20px 20px rgba(13, 110, 253, 1);">
+        <p id="Modul_Pembelajaran" class="text-center" style="font-size: 32px;font-weight: bold;">Modul Pembelajaran</p>
+        <div class="row d-xl-flex" style="margin: 0px;text-align: left;padding: 0px;">
+            
+            <!-- modul program -->
+            <div class="col" style="margin: 0;padding: 12px;">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Pemrograman</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Modul ini membahas dasar-dasar pemrograman, mulai dari pengenalan HTML, CSS, dan JavaScript. Materi dirancang untuk memahami konsep fundamental dalam pengembangan aplikasi web secara interaktif dan praktis</p>
+                        <div class="accordion" role="tablist" id="accordion-1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">Pengantar Pemrograman</button></h2>
+                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Apa Itu Pemrograman?</li>
+                                            <li>Bahasa Pemrograman</li>
+                                            <li>Integrated Development Environment (IDE)</li>
+                                        </ol>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Variabel dan Tipe Data</button></h2>
+                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Variabel dalam Pemrograman</li>
+                                            <li>Tipe Data dalam Pemrograman</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">Kontrol Alur dan Fungsi</button></h2>
+                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Kondisional</li>
+                                            <li>Perulangan</li>
+                                            <li>Definisi Fungsi</li>
+                                            <li>Penggunaan Fungsi</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="/modul/modul-program.html">
+                            <button class="btn btn-primary mt-3 w-100 fw-bold fs-5">Buka Modul Lengkap </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- modul desain -->
+            <div class="col" style="margin: 0;padding: 12px;">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Desain</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-start card-text">Modul ini memperkenalkan prinsip dasar desain grafis, seperti teori warna, tipografi, dan desain antarmuka. Cocok untuk pemula yang ingin memahami cara menciptakan tampilan visual yang menarik dan fungsional.</p>
+                        <div class="accordion" role="tablist" id="accordion-2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1">Pengenalan Desain Grafis</button></h2>
+                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-2">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Definisi Desain Grafis</li>
+                                            <li>Elemen Dasar Desain Grafis</li>
+                                            <li>Tujuan Desain Grafis</li>
+                                            <li>Sejarah Singkat Desain Grafis</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Prinsip Dasar Desain</button></h2>
+                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-2">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Keseimbangan (Balance)</li>
+                                            <li>Kontras (Contrast)</li>
+                                            <li>Hierarki Visual (Visual Hierarchy)</li>
+                                            <li>Ritme (Rhythm)</li>
+                                            <li>Proposi (Proportion)</li>
+                                            <li>Kesatuan (Unity)</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">Alat dan Software Desain</button></h2>
+                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-2">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Software Desain Vektor</li>
+                                            <li>Software Desain Raster</li>
+                                            <li>Desain Web dan UI/UX</li>
+                                            <li>Alat Desain Lainnya</li>
+                                            <li>Alat Desain untuk Animasi</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="/modul/modul-design.html">
+                                <button class="btn btn-primary mt-3 w-100 fw-bold fs-5">Buka Modul Lengkap </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- modul jaringan -->
+            <div class="col" style="margin: 0px;padding: 12px;">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Jaringan</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Modul ini mencakup pengenalan jaringan komputer, protokol komunikasi, dan keamanan jaringan. Dirancang untuk membangun pemahaman awal tentang cara kerja dan manajemen jaringan secara praktis.</p>
+                        <div class="accordion" role="tablist" id="accordion-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1" aria-expanded="false" aria-controls="accordion-3 .item-1">Pengenalan Jaringan Komputer</button></h2>
+                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-3">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Apa itu Jaringan Komputer?</li>
+                                            <li>Manfaat Jaringan Komputer</li>
+                                            <li>Topologi Jaringan</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-2" aria-expanded="false" aria-controls="accordion-3 .item-2">Protokol dan Pengalamatan Jaringan</button></h2>
+                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-3">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Apa itu Protokol Jaringan?</li>
+                                            <li>Jenis-jenis Protokol Jaringan</li>
+                                            <li>Pengertian Alamat IP</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-3" aria-expanded="false" aria-controls="accordion-3 .item-3">Keamanan Jaringan dan Manajemen</button></h2>
+                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-3">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Firewall dalam Jaringan</li>
+                                            <li>Enkripsi dalam Jaringan</li>
+                                            <li>Manajemen Jaringan</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/modul/modul-jaringan.html">
+                                <button class="btn btn-primary mt-3 w-100 fw-bold fs-5">Buka Modul Lengkap </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(#0d6efd 0%, white 100%);height: 50px;"></div>
+
+    <!-- quiz -->
+    <div class="container-fluid" style="padding: 0;padding-top: 20px;padding-bottom: 20px;background: #ffffff; padding-right: 20px; padding-left: 20px;">
+        <p id="Kuis" class="text-center" style="font-size: 32px;font-weight: bold; ">Kuis</p>
+        <div class="card-group" style="margin: 0px;">
+            <div class="card" style="margin: 10px;"><img class="card-img-top w-100 d-block" src="img/programmer.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Pemrograman</h4>
+                    <p class="card-text">Quiz ini dirancang untuk menguji pemahaman dasar tentang pemrograman, mencakup HTML, CSS, dan JavaScript. Soal-soal berfokus pada konsep fundamental yang penting untuk pengembangan web</p>
+                    <button class="btn btn-primary" type="button" data-bs-target="#quizProgrammingModal" data-bs-toggle="modal">Mulai</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 10px;"><img class="card-img-top w-100 d-block" src="img/design.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Desain</h4>
+                    <p class="card-text">Quiz ini bertujuan mengukur pengetahuan tentang prinsip dasar desain grafis, seperti teori warna, tipografi, dan elemen desain antarmuka. Soal-soalnya membantu mengevaluasi kemampuan memahami estetika visual dan fungsionalitas.</p>
+                    <button class="btn btn-primary" type="button" data-bs-target="#quizDesignModal" data-bs-toggle="modal">Mulai</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 10px;"><img class="card-img-top w-100 d-block" src="img/network.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Jaringan</h4>
+                    <p class="card-text">Quiz ini menguji pemahaman tentang konsep dasar jaringan komputer, protokol komunikasi, dan keamanan jaringan. Soal-soalnya difokuskan pada teori dan aplikasi praktis yang mendasar.</p>
+                    <button class="btn btn-primary" type="button" data-bs-target="#quizNetworkingModal" data-bs-toggle="modal">Mulai</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Kuis Pemrograman -->
+        <div id="quizProgrammingModal" class="modal fade" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Kuis Pemrograman</h4>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div id="quizBodyProgramming" class="modal-body">
+                        <!-- Soal 1 -->
+                        <div class="question" id="question1Programming">
+                            <p><strong>1. Apa itu pemrograman komputer?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Programming" value="wrong" id="q1-1Programming">
+                                <label class="form-check-label" for="q1-1Programming">A. Proses mendesain gambar</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Programming" value="correct" id="q1-2Programming">
+                                <label class="form-check-label" for="q1-2Programming">B. Proses menulis kode untuk membuat komputer melakukan tugas tertentu</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Programming" value="wrong" id="q1-3Programming">
+                                <label class="form-check-label" for="q1-3Programming">C. Proses membuat hardware komputer</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Programming" value="wrong" id="q1-4Programming">
+                                <label class="form-check-label" for="q1-4Programming">D. Proses menghubungkan komputer dengan perangkat lain</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 2 -->
+                        <div class="question" id="question2Programming">
+                            <p><strong>2. Manakah dari berikut ini yang merupakan bahasa pemrograman yang umum digunakan?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Programming" value="wrong" id="q2-1Programming">
+                                <label class="form-check-label" for="q2-1Programming">A. HTML</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Programming" value="wrong" id="q2-2Programming">
+                                <label class="form-check-label" for="q2-2Programming">B. CSS</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Programming" value="correct" id="q2-3Programming">
+                                <label class="form-check-label" for="q2-3Programming">C. JavaScript</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Programming" value="wrong" id="q2-4Programming">
+                                <label class="form-check-label" for="q2-4Programming">D. XML</label>
+                            </div>
+                        </div>
+                            
+
+                        <!-- Soal 3 -->
+                        <div class="question" id="question3Programming">
+                            <p><strong>3. Apa itu IDE (Integrated Development Environment) dalam pemrograman?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Programming" value="wrong" id="q3-1Programming">
+                                <label class="form-check-label" for="q3-1Programming">A. Perangkat keras yang digunakan untuk menjalankan program</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Programming" value="wrong" id="q3-2Programming">
+                                <label class="form-check-label" for="q3-2Programming">B. Alat untuk mendesain antarmuka pengguna</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Programming" value="correct" id="q3-3Programming">
+                                <label class="form-check-label" for="q3-3Programming">C. Program yang digunakan untuk menulis, mengedit, dan menjalankan kode</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Programming" value="wrong" id="q3-4Programming">
+                                <label class="form-check-label" for="q3-4Programming">D. Sistem untuk mengelola database</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 4 -->
+                        <div class="question" id="question4Programming">
+                            <p><strong>4. Apa itu variabel dalam pemrograman?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Programming" value="correct" id="q4-1Programming">
+                                <label class="form-check-label" for="q4-1Programming">A. Tempat untuk menyimpan data yang dapat berubah selama program berjalan</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Programming" value="wrong" id="q4-2Programming">
+                                <label class="form-check-label" for="q4-2Programming">B. Nama untuk menampilkan output</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Programming" value="wrong" id="q4-3Programming">
+                                <label class="form-check-label" for="q4-3Programming">C. Program untuk menjalankan perintah berulang kali</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Programming" value="wrong" id="q4-4Programming">
+                                <label class="form-check-label" for="q4-4Programming">D. Tipe data yang digunakan untuk menyimpan angka</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 5 -->
+                        <div class="question" id="question5Programming">
+                            <p><strong>5. Manakah dari berikut ini adalah tipe data yang benar dalam JavaScript?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Programming" value="wrong" id="q5-1Programming">
+                                <label class="form-check-label" for="q5-1Programming">A. int, double, string</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Programming" value="correct" id="q5-2Programming">
+                                <label class="form-check-label" for="q5-2Programming">B. number, string, boolean</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Programming" value="wrong" id="q5-3Programming">
+                                <label class="form-check-label" for="q5-3Programming">C. char, boolean, float</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Programming" value="wrong" id="q5-4Programming">
+                                <label class="form-check-label" for="q5-4Programming">D. number, array, integer</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 6 -->
+                        <div class="question" id="question6Programming">
+                            <p><strong>6. Bagaimana cara mendeklarasikan variabel di JavaScript?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Programming" value="correct" id="q6-1Programming">
+                                <label class="form-check-label" for="q6-1Programming">A. `let variable = 10;`</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Programming" value="wrong" id="q6-2Programming">
+                                <label class="form-check-label" for="q6-2Programming">B. `int variable = 10;`</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Programming" value="wrong" id="q6-3Programming">
+                                <label class="form-check-label" for="q6-3Programming">C. `var variable;`</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Programming" value="wrong" id="q6-4Programming">
+                                <label class="form-check-label" for="q6-4Programming">D. `variable = 10;`</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 7 -->
+                        <div class="question" id="question7Programming">
+                            <p><strong>7. Manakah yang bukan merupakan jenis operator dalam JavaScript?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Programming" value="wrong" id="q7-1Programming">
+                                <label class="form-check-label" for="q7-1Programming">A. Penjumlahan (`+`)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Programming" value="wrong" id="q7-2Programming">
+                                <label class="form-check-label" for="q7-2Programming">B. Pembagian (`/`)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Programming" value="wrong" id="q7-3Programming">
+                                <label class="form-check-label" for="q7-3Programming">C. Modulus (`%`)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Programming" value="correct" id="q7-4Programming">
+                                <label class="form-check-label" for="q7-4Programming">D. Panjang (`~`)</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 8 -->
+                        <div class="question" id="question8Programming">
+                            <p><strong>8. Apa tujuan dari penggunaan `function` dalam pemrograman JavaScript?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Programming" value="correct" id="q8-1Programming">
+                                <label class="form-check-label" for="q8-1Programming">A. Untuk mengelompokkan kode yang dapat dipanggil kembali</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Programming" value="wrong" id="q8-2Programming">
+                                <label class="form-check-label" for="q8-2Programming">B. Untuk menyimpan data dalam sebuah variabel</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Programming" value="wrong" id="q8-3Programming">
+                                <label class="form-check-label" for="q8-3Programming">C. Untuk menampilkan pesan ke layar</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Programming" value="wrong" id="q8-4Programming">
+                                <label class="form-check-label" for="q8-4Programming">D. Untuk mengurutkan data secara otomatis</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 9 -->
+                        <div class="question" id="question9Programming">
+                            <p><strong>9. Apa itu `array` dalam JavaScript?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Programming" value="correct" id="q9-1Programming">
+                                <label class="form-check-label" for="q9-1Programming">A. Struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Programming" value="wrong" id="q9-2Programming">
+                                <label class="form-check-label" for="q9-2Programming">B. Tipe data yang hanya bisa menyimpan satu nilai</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Programming" value="wrong" id="q9-3Programming">
+                                <label class="form-check-label" for="q9-3Programming">C. Variabel yang menyimpan nama pengguna</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Programming" value="wrong" id="q9-4Programming">
+                                <label class="form-check-label" for="q9-4Programming">D. Tipe data untuk menampilkan pesan kesalahan</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 10 -->
+                        <div class="question" id="question10Programming">
+                            <p><strong>10. Manakah dari berikut ini yang benar untuk menampilkan output ke konsol di JavaScript?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Programming" value="correct" id="q10-1Programming">
+                                <label class="form-check-label" for="q10-1Programming">A. `console.log("Hello, world!");`</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Programming" value="wrong" id="q10-2Programming">
+                                <label class="form-check-label" for="q10-2Programming">B. `print("Hello, world!");`</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Programming" value="wrong" id="q10-3Programming">
+                                <label class="form-check-label" for="q10-3Programming">C. `echo "Hello, world!";`</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Programming" value="wrong" id="q10-4Programming">
+                                <label class="form-check-label" for="q10-4Programming">D. `log("Hello, world!");`</label>
+                            </div>
+                        </div>     
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" id="finishBtnProgramming" data-bs-dismiss="modal">Selesai</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+
+        <!-- Modal Kuis Desain -->
+        <div id="quizDesignModal" class="modal fade" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Kuis Desain</h4>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div id="quizBodyDesign" class="modal-body">
+                        <!-- Pertanyaan Desain -->
+                        <!-- Soal 1-->
+                        <div class="question" id="question1Design">
+                            <p><strong>1. Apa yang dimaksud dengan desain grafis?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Design" value="wrong" id="q1-1Design">
+                                <label class="form-check-label" for="q1-1Design">Proses mengubah gambar menjadi tulisan</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Design" value="correct" id="q1-2Design">
+                                <label class="form-check-label" for="q1-2Design">Seni menciptakan komunikasi visual melalui teks dan gambar</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Design" value="wrong" id="q1-3Design">
+                                <label class="form-check-label" for="q1-3Design">Mengedit foto menggunakan software komputer</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 2-->
+                        <div class="question" id="question2Design">
+                            <p><strong>2. Sebutkan tiga elemen dasar dalam desain grafis!</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Design" value="wrong" id="q2-1Design">
+                                <label class="form-check-label" for="q2-1Design">Warna, tekstur, komposisi</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Design" value="correct" id="q2-2Design">
+                                <label class="form-check-label" for="q2-2Design">Warna, tipografi, gambar</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Design" value="wrong" id="q2-3Design">
+                                <label class="form-check-label" for="q2-3Design">Garis, bentuk, ruang</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 3-->
+                        <div class="question" id="question3Design">
+                            <p><strong>3. Apa tujuan utama dari desain grafis dalam dunia pemasaran?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Design" value="wrong" id="q3-1Design">
+                                <label class="form-check-label" for="q3-1Design">Mengedit foto produk</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Design" value="correct" id="q3-2Design">
+                                <label class="form-check-label" for="q3-2Design">Membuat iklan visual yang menarik perhatian</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Design" value="wrong" id="q3-3Design">
+                                <label class="form-check-label" for="q3-3Design">Menghasilkan gambar artistik untuk media sosial</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 4-->
+                        <div class="question" id="question4Design">
+                            <p><strong>4. Apa yang dimaksud dengan komposisi dalam desain grafis?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Design" value="correct" id="q4-1Design">
+                                <label class="form-check-label" for="q4-1Design">Pengaturan elemen-elemen desain pada halaman</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Design" value="wrong" id="q4-2Design">
+                                <label class="form-check-label" for="q4-2Design">Pemilihan warna yang digunakan dalam desain</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Design" value="wrong" id="q4-3Design">
+                                <label class="form-check-label" for="q4-3Design">Ukuran gambar yang digunakan dalam desain</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 5-->
+                        <div class="question" id="question5Design">
+                            <p><strong>5. Prinsip desain mana yang menjelaskan bagaimana elemen-elemen desain diatur untuk menciptakan kesan visual yang seimbang?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Design" value="wrong" id="q5-1Design">
+                                <label class="form-check-label" for="q5-1Design">Kontras</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Design" value="correct" id="q5-2Design">
+                                <label class="form-check-label" for="q5-2Design">Keseimbangan</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Design" value="wrong" id="q5-3Design">
+                                <label class="form-check-label" for="q5-3Design">Hirarki</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 6-->
+                        <div class="question" id="question6Design">
+                            <p><strong>6. Apa yang dimaksud dengan kontras dalam desain grafis?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Design" value="wrong" id="q6-1Design">
+                                <label class="form-check-label" for="q6-1Design">Pengulangan elemen desain untuk menciptakan pola</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Design" value="correct" id="q6-2Design">
+                                <label class="form-check-label" for="q6-2Design">Perbedaan antara elemen desain untuk menciptakan fokus</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Design" value="wrong" id="q6-3Design">
+                                <label class="form-check-label" for="q6-3Design">Pengaturan elemen desain untuk menciptakan kesan keteraturan</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 7-->
+                        <div class="question" id="question7Design">
+                            <p><strong>7. Bagaimana prinsip “hierarki visual” diterapkan dalam desain?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Design" value="correct" id="q7-1Design">
+                                <label class="form-check-label" for="q7-1Design">Menyusun elemen berdasarkan tingkat kepentingan visual untuk memandu perhatian audiens</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Design" value="wrong" id="q7-2Design">
+                                <label class="form-check-label" for="q7-2Design">Menempatkan elemen yang paling penting di tengah desain</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Design" value="wrong" id="q7-3Design">
+                                <label class="form-check-label" for="q7-3Design">Menggunakan warna yang mencolok untuk elemen yang tidak penting</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 8-->
+                        <div class="question" id="question8Design">
+                            <p><strong>8. Prinsip desain mana yang digunakan untuk menciptakan perasaan gerakan atau pola berulang dalam desain?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Design" value="correct" id="q8-1Design">
+                                <label class="form-check-label" for="q8-1Design">Ritme</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Design" value="wrong" id="q8-2Design">
+                                <label class="form-check-label" for="q8-2Design">Proporsi</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Design" value="wrong" id="q8-3Design">
+                                <label class="form-check-label" for="q8-3Design">Keseimbangan</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 9-->
+                        <div class="question" id="question9Design">
+                            <p><strong>9. Apa software desain grafis yang paling umum digunakan untuk mengedit gambar vektor?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Design" value="wrong" id="q9-1Design">
+                                <label class="form-check-label" for="q9-1Design">Adobe Photoshop</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Design" value="correct" id="q9-2Design">
+                                <label class="form-check-label" for="q9-2Design">Adobe Illustrator</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Design" value="wrong" id="q9-3Design">
+                                <label class="form-check-label" for="q9-3Design">CorelDRAW</label>
+                            </div>
+                        </div>     
+
+                        <!-- Soal 10-->
+                        <div class="question" id="question10Design">
+                            <p><strong>10. Manakah dari berikut ini yang merupakan alat desain grafis yang digunakan untuk mendesain website dan antarmuka pengguna?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Design" value="wrong" id="q10-1Design">
+                                <label class="form-check-label" for="q10-1Design">Adobe Premiere Pro</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Design" value="correct" id="q10-2Design">
+                                <label class="form-check-label" for="q10-2Design">Adobe XD</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Design" value="wrong" id="q10-3Design">
+                                <label class="form-check-label" for="q10-3Design">Blender</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" id="finishBtnDesign" data-bs-dismiss="modal">Selesai</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+
+        <!-- Modal Kuis Jaringan -->
+        <div id="quizNetworkingModal" class="modal fade" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Kuis Jaringan</h4>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div id="quizBodyNetworking" class="modal-body">
+                        <!-- Pertanyaan Jaringan -->
+                        <!-- Soal 1 -->
+                        <div class="question" id="question1Networking">
+                            <p><strong>1. Apa yang dimaksud dengan jaringan komputer?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Networking" value="correct" id="q1-1Networking">
+                                <label class="form-check-label" for="q1-1Networking">Sekumpulan perangkat yang terhubung untuk berbagi data dan sumber daya.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Networking" value="wrong" id="q1-2Networking">
+                                <label class="form-check-label" for="q1-2Networking">Hanya komputer yang terhubung secara fisik.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1Networking" value="wrong" id="q1-3Networking">
+                                <label class="form-check-label" for="q1-3Networking">Sistem yang digunakan untuk menjalankan program di komputer.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 2 -->
+                        <div class="question" id="question2Networking">
+                            <p><strong>2. Apa tujuan utama dari jaringan komputer?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Networking" value="wrong" id="q2-1Networking">
+                                <label class="form-check-label" for="q2-1Networking">Meningkatkan kecepatan pengolahan data.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Networking" value="correct" id="q2-2Networking">
+                                <label class="form-check-label" for="q2-2Networking">Berbagi informasi dan sumber daya antar komputer.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2Networking" value="wrong" id="q2-3Networking">
+                                <label class="form-check-label" for="q2-3Networking">Mengurangi penggunaan perangkat keras.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 3 -->
+                        <div class="question" id="question3Networking">
+                            <p><strong>3. Apa yang dimaksud dengan topologi jaringan?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Networking" value="correct" id="q3-1Networking">
+                                <label class="form-check-label" for="q3-1Networking">Desain fisik atau logis pengaturan perangkat dalam jaringan.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Networking" value="wrong" id="q3-2Networking">
+                                <label class="form-check-label" for="q3-2Networking">Sistem operasi yang digunakan dalam jaringan.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3Networking" value="wrong" id="q3-3Networking">
+                                <label class="form-check-label" for="q3-3Networking">Alamat IP yang digunakan untuk menghubungkan perangkat.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 4 -->
+                        <div class="question" id="question4Networking">
+                            <p><strong>4. Manakah dari berikut ini yang bukan jenis topologi jaringan?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Networking" value="wrong" id="q4-1Networking">
+                                <label class="form-check-label" for="q4-1Networking">Topologi Bus</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Networking" value="wrong" id="q4-2Networking">
+                                <label class="form-check-label" for="q4-2Networking">Topologi Ring</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4Networking" value="correct" id="q4-3Networking">
+                                <label class="form-check-label" for="q4-3Networking">Topologi Satellite</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 5 -->
+                        <div class="question" id="question5Networking">
+                            <p><strong>5. Apa itu protokol dalam jaringan komputer?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Networking" value="correct" id="q5-1Networking">
+                                <label class="form-check-label" for="q5-1Networking">Standar yang mengatur bagaimana data ditransmisikan antar perangkat.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Networking" value="wrong" id="q5-2Networking">
+                                <label class="form-check-label" for="q5-2Networking">Alamat yang digunakan untuk mengidentifikasi perangkat dalam jaringan.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5Networking" value="wrong" id="q5-3Networking">
+                                <label class="form-check-label" for="q5-3Networking">Perangkat keras yang digunakan untuk menghubungkan komputer.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 6 -->
+                        <div class="question" id="question6Networking">
+                            <p><strong>6. Protokol apa yang digunakan untuk mentransfer data di internet?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Networking" value="wrong" id="q6-1Networking">
+                                <label class="form-check-label" for="q6-1Networking">HTTP</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Networking" value="wrong" id="q6-2Networking">
+                                <label class="form-check-label" for="q6-2Networking">FTP</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q6Networking" value="correct" id="q6-3Networking">
+                                <label class="form-check-label" for="q6-3Networking">TCP/IP</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 7 -->
+                        <div class="question" id="question7Networking">
+                            <p><strong>7. Apa yang dimaksud dengan alamat IP?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Networking" value="wrong" id="q7-1Networking">
+                                <label class="form-check-label" for="q7-1Networking">Alamat fisik perangkat keras dalam jaringan.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Networking" value="correct" id="q7-2Networking">
+                                <label class="form-check-label" for="q7-2Networking">Alamat yang digunakan untuk mengidentifikasi dan menghubungkan perangkat dalam jaringan.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q7Networking" value="wrong" id="q7-3Networking">
+                                <label class="form-check-label" for="q7-3Networking">Protokol yang mengatur pengiriman data dalam jaringan.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 8 -->
+                        <div class="question" id="question8Networking">
+                            <p><strong>8. Alamat IP manakah yang termasuk dalam kelas A?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Networking" value="wrong" id="q8-1Networking">
+                                <label class="form-check-label" for="q8-1Networking">192.168.0.1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Networking" value="correct" id="q8-2Networking">
+                                <label class="form-check-label" for="q8-2Networking">10.0.0.1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q8Networking" value="wrong" id="q8-3Networking">
+                                <label class="form-check-label" for="q8-3Networking">172.16.0.1</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 9 -->
+                        <div class="question" id="question9Networking">
+                            <p><strong>9. Apa yang dimaksud dengan firewall dalam jaringan komputer?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Networking" value="correct" id="q9-1Networking">
+                                <label class="form-check-label" for="q9-1Networking">Alat yang digunakan untuk memantau dan mengontrol lalu lintas data dalam jaringan.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Networking" value="wrong" id="q9-2Networking">
+                                <label class="form-check-label" for="q9-2Networking">Sistem yang mengatur kecepatan koneksi internet.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q9Networking" value="wrong" id="q9-3Networking">
+                                <label class="form-check-label" for="q9-3Networking">Perangkat keras yang digunakan untuk menghubungkan komputer.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 10 -->
+                        <div class="question" id="question10Networking">
+                            <p><strong>10. Mengapa penting untuk memiliki enkripsi dalam jaringan?</strong></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Networking" value="wrong" id="q10-1Networking">
+                                <label class="form-check-label" for="q10-1Networking">Untuk mempercepat proses pengiriman data.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Networking" value="correct" id="q10-2Networking">
+                                <label class="form-check-label" for="q10-2Networking">Untuk mencegah data yang dikirimkan disadap oleh pihak yang tidak berwenang.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q10Networking" value="wrong" id="q10-3Networking">
+                                <label class="form-check-label" for="q10-3Networking">Untuk menambah kecepatan akses internet.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" id="finishBtnNetworking" data-bs-dismiss="modal">Selesai</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+
+    <div style="background: linear-gradient(white 0%, #0d6efd 100%);height: 50px;"></div>
+    
+    <!-- progress -->
+    <div class="container-fluid py-4 py-xl-5" style="padding-right: 30px;padding-left: 30px;background: #0d6efd;">
+        <div class="row mb-5" style="margin-top: -20px;">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 id="Progres" style="font-weight: bold; color: #ffffff;">Progres Belajar</h2>
+            </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin-bottom: 0px;margin-top: -50px;">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="bg-primary" style="height: 50px; width: 50px; padding: 10px; border-radius: 10px;">
+                            <img src="img/icon coding.png" alt="icon" class="img-fluid" >
+                        </div>
+                        <h4 class="card-title">Pemrograman</h4>
+                        <div class="progress">
+                            <div id="quizProgressBarProgramming" class="progress-bar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                        </div>
+                        <span id="scoreBadgeProgramming" class="badge bg-info d-none mt-2"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="bg-primary" style="height: 50px; width: 50px; padding: 10px; border-radius: 10px;">
+                            <img src="img/icon design.png" alt="icon" class="img-fluid" >
+                        </div>
+                        <h4 class="card-title">Desain</h4>
+                        <div class="progress">
+                            <div id="quizProgressBarDesign" class="progress-bar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                        </div>
+                        <span id="scoreBadgeDesign" class="badge bg-info d-none mt-2"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="bg-primary" style="height: 50px; width: 50px; padding: 10px; border-radius: 10px;">
+                            <img src="img/icon internet.png" alt="icon" class="img-fluid" >
+                        </div>
+                        <h4 class="card-title">Jaringan</h4>
+                        <div class="progress">
+                            <div id="quizProgressBarNetworking" class="progress-bar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                        </div>
+                        <span id="scoreBadgeNetworking" class="badge bg-info d-none mt-2"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="bg-primary" style="height: 50px; width: 50px; padding: 5px; border-radius: 10px;">
+                            <img src="img/icon achievment.png" alt="icon" class="img-fluid" >
+                        </div>
+                        <h4 class="card-title">Rata-Rata</h4>
+                        <div class="progress">
+                            <div id="quizProgressBarTotal" class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+.tab-pane {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100vh;
+    text-align: justify;
+    display: none;
+}
+
+.tab-pane.show {
+    display: block;
+}
+
+.accordion{
+    text-align: center;
+}
+
+
+.nav-link.active {
+    background-color: #e9ecef !important;
+    color: #000000 !important; 
+}
+
+.custom-row {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.materi {
+    overflow-y: auto;
+    height: 91vh;
+}
+
+.tab-content{
+    margin-bottom: 250px;
+}
+
+@media (max-width: 992px) {
+    .custom-row {
+        height: auto; 
+        width: auto;
+        position: relative;
+    }
+
+    .materi{
+        height: 100%;
+        overflow: visible;
+        font-size: small;
+        margin-bottom: 100px
+    }
+}
