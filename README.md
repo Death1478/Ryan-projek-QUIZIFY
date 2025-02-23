@@ -1,5 +1,7 @@
 # Quizify
 
+https://death1478.github.io/Ryan-projek-QUIZIFY/
+
 **Quizify** adalah platform edukasi interaktif yang dirancang untuk:
 - Mempermudah akses belajar di bidang multimedia (Pemrograman, Desain, dan Jaringan) melalui modul terarah.
 - Meningkatkan interaktivitas belajar dengan kuis berbasis pengetahuan.
